@@ -63,8 +63,6 @@ namespace Multiplayer
         float lerpAlpha;
         public bool weHadReceivedInterpolationTime;
 
-        
-
         private void Start()
         {
 
@@ -361,6 +359,10 @@ namespace Multiplayer
                     transform.rotation = Quaternion.Slerp(updateFrom.rotation, updateTo.rotation, lerpAmount);
                     break;
             }
+
+            // Update interpolation tick and lerp amount for proper hit detection
+            GlobalVariables.interpolationTick = updateTo.tick;
+            GlobalVariables.lerpAmount = lerpAmount;
         }
 
         // Updates are used to add a new tick to the list
