@@ -30,7 +30,7 @@ public enum NetworkedObjectType : byte
     projectile,
 }
 
-/// <summary> Main core of the networking - conection handling, tick counting, spawning local player, disconnecting</summary>
+/// <summary> Main core of the networking - conection handling, sending and receiving packets</summary>
 public class NetworkManager : MonoBehaviour
 {
     private static NetworkManager singleton;
