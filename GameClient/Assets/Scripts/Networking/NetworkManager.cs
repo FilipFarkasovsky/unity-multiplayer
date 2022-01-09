@@ -1,5 +1,4 @@
 ﻿using RiptideNetworking;
-using RiptideNetworking.Transports.RudpTransport;
 using RiptideNetworking.Utils;
 using System;
 using UnityEngine;
@@ -62,13 +61,9 @@ public class NetworkManager : MonoBehaviour
     public Dictionary<ushort, Player> playerList { get; private set; } = new Dictionary<ushort, Player>();
     public Dictionary<ushort, ClientNetworkedEntity> entitiesList { get; private set; } = new Dictionary<ushort, ClientNetworkedEntity>();
 
-    public GameObject LocalPlayerPrefab => localPlayerPrefab;
     [SerializeField] private GameObject localPlayerPrefab;
-    public GameObject PlayerPrefab => playerPrefab;
     [SerializeField] private GameObject playerPrefab;
-    public GameObject EnemyPrefab => enemyPrefab;
     [SerializeField] private GameObject enemyPrefab;
-    public GameObject ProjectilePrefab => projectilePrefab;
     [SerializeField] private GameObject projectilePrefab;
 
     public Dictionary<byte, GameObject> entityPrefabs;
@@ -77,20 +72,22 @@ public class NetworkManager : MonoBehaviour
     private void Awake()
     {
         Application.runInBackground = true;
+        QualitySettings.vSyncCount = 0;
+
         Singleton = this;
 
         entityPrefabs = new Dictionary<byte, GameObject>()
         {
-            { (byte)NetworkedObjectType.localPlayer, Singleton.LocalPlayerPrefab },
-            { (byte)NetworkedObjectType.player, Singleton.PlayerPrefab },
-            { (byte)NetworkedObjectType.enemy, Singleton.EnemyPrefab },
-            { (byte)NetworkedObjectType.projectile, Singleton.ProjectilePrefab },
+            { (byte)NetworkedObjectType.localPlayer, Singleton.localPlayerPrefab },
+            { (byte)NetworkedObjectType.player, Singleton.playerPrefab },
+            { (byte)NetworkedObjectType.enemy, Singleton.enemyPrefab },
+            { (byte)NetworkedObjectType.projectile, Singleton.projectilePrefab },
         };
     }
 
     private void Start()
     {
-        logicTimer = new Multiplayer.LogicTimer(FixedTime);
+        logicTimer = new LogicTimer(FixedTime);
         logicTimer.Start();
 
         RiptideLogger.Initialize(Debug.Log, Debug.Log, Debug.LogWarning, Debug.LogError, false);
@@ -105,8 +102,8 @@ public class NetworkManager : MonoBehaviour
 
     private void Update()
     {
+        LerpManager.Update();
         logicTimer.Update();
-        Multiplayer.LerpManager.Update();
     }
 
     private void FixedTime()
