@@ -7,8 +7,6 @@ namespace Multiplayer
     public class Interpolation : MonoBehaviour
     {
         #region properties
-        public Material material;
-
         [SerializeField] public InterpolationMode mode;
         [SerializeField] public InterpolationTarget target;
         [SerializeField] private PlayerAnimation playerAnimation;
@@ -35,8 +33,6 @@ namespace Multiplayer
         public Vector3 NewPosition;
         public float PreviousTime;
         public float CurrentTime;
-
-        public bool isCube;
 
         #endregion
 
@@ -379,12 +375,6 @@ namespace Multiplayer
                 weHadReceivedInterpolationTime = true;
             }
 
-            if (lastPes >= tick)
-            {
-                Debug.Log("zle");
-            }
-            lastPes = tick;
-
             futureTransformUpdates.Add(new TransformUpdate(tick, time, position, rotation, animationData));
             
             MaxServerTimeReceived = Mathf.Max(MaxServerTimeReceived, time);
@@ -434,9 +424,6 @@ namespace Multiplayer
             if (futureTransformUpdates.Count <= 0 || futureTransformUpdates[0] == null)
                 return;
 
-            if (material)
-                material.color = Color.green;
-
             // we remove incorrect updates and create new ones if needed
             TransformUpdate last = null;
             foreach (TransformUpdate update in futureTransformUpdates.ToArray())
@@ -452,7 +439,6 @@ namespace Multiplayer
                 // We want to get last tick
                 if (update.tick <= last?.tick)
                 {
-                    Debug.Log($"Several updates have same tick, removing transform update");
                     futureTransformUpdates.Remove(update);
                     continue;
                 }
