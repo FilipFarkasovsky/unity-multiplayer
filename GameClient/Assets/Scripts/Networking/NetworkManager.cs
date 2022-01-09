@@ -49,11 +49,9 @@ public class NetworkManager : MonoBehaviour
         }
     }
 
+    public Client Client { get; private set; }
     public string ip;
     public ushort port;
-
-    public Client Client { get; private set; }
-
     private LogicTimer logicTimer;
 
     public Convar tickrate = new Convar("sv_tickrate", 32, "Ticks per second", Flags.NETWORK, 1, 128);
@@ -71,11 +69,13 @@ public class NetworkManager : MonoBehaviour
 
     private void Awake()
     {
+        // in the start we set quality and application setting of the game
         Application.runInBackground = true;
         QualitySettings.vSyncCount = 0;
 
         Singleton = this;
 
+        // dictionary which contains entity prefabs
         entityPrefabs = new Dictionary<byte, GameObject>()
         {
             { (byte)NetworkedObjectType.localPlayer, Singleton.localPlayerPrefab },
@@ -87,13 +87,15 @@ public class NetworkManager : MonoBehaviour
 
     private void Start()
     {
+        // Loop called regularly every tick
         logicTimer = new LogicTimer(FixedTime);
         logicTimer.Start();
 
+        // Logging information within certain methods
         RiptideLogger.Initialize(Debug.Log, Debug.Log, Debug.LogWarning, Debug.LogError, false);
 
+        // Riptide networking client
         Client = new Client();
-
         Client.Connected += DidConnect;
         Client.ConnectionFailed += FailedToConnect;
         Client.ClientDisconnected += PlayerLeft;
@@ -107,7 +109,7 @@ public class NetworkManager : MonoBehaviour
 
     private void FixedTime()
     {
-        // Execute networking operations (handled messages etc.)
+        // Execute networking operations (sending and receiving data)
         Client.Tick();
     }
 
