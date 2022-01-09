@@ -120,8 +120,6 @@ namespace Multiplayer
     /// <summary> Stores positions and rotations at given tick - used for interpolation </summary>
     public class TransformUpdate
     {
-        public static TransformUpdate zero = new TransformUpdate(0, 0, 0, Vector3.zero, Quaternion.identity);
-
         public int tick;
         public float time;
         public float deliveryTime;
