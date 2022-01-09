@@ -7,8 +7,6 @@ namespace Multiplayer
     public class Interpolation : MonoBehaviour
     {
         #region properties
-        public Material material;
-
         [SerializeField] public InterpolationMode mode;
         [SerializeField] public InterpolationTarget target;
         [SerializeField] private PlayerAnimation playerAnimation;
@@ -35,8 +33,6 @@ namespace Multiplayer
         public Vector3 NewPosition;
         public float PreviousTime;
         public float CurrentTime;
-
-        public bool isCube;
 
         #endregion
 
@@ -66,8 +62,6 @@ namespace Multiplayer
 
         float lerpAlpha;
         public bool weHadReceivedInterpolationTime;
-
-        
 
         private void Start()
         {
@@ -365,6 +359,10 @@ namespace Multiplayer
                     transform.rotation = Quaternion.Slerp(updateFrom.rotation, updateTo.rotation, lerpAmount);
                     break;
             }
+
+            // Update interpolation tick and lerp amount for proper hit detection
+            GlobalVariables.interpolationTick = updateTo.tick;
+            GlobalVariables.lerpAmount = lerpAmount;
         }
 
         // Updates are used to add a new tick to the list
@@ -378,12 +376,6 @@ namespace Multiplayer
                 ScaledInterpolationTime = NormalInterpolationTime = time - (SNAPSHOT_INTERVAL * SNAPSHOT_OFFSET_COUNT);
                 weHadReceivedInterpolationTime = true;
             }
-
-            if (lastPes >= tick)
-            {
-                Debug.Log("zle");
-            }
-            lastPes = tick;
 
             futureTransformUpdates.Add(new TransformUpdate(tick, time, position, rotation, animationData));
             
@@ -434,9 +426,6 @@ namespace Multiplayer
             if (futureTransformUpdates.Count <= 0 || futureTransformUpdates[0] == null)
                 return;
 
-            if (material)
-                material.color = Color.green;
-
             // we remove incorrect updates and create new ones if needed
             TransformUpdate last = null;
             foreach (TransformUpdate update in futureTransformUpdates.ToArray())
@@ -452,7 +441,6 @@ namespace Multiplayer
                 // We want to get last tick
                 if (update.tick <= last?.tick)
                 {
-                    Debug.Log($"Several updates have same tick, removing transform update");
                     futureTransformUpdates.Remove(update);
                     continue;
                 }

@@ -1,5 +1,4 @@
 ﻿using RiptideNetworking;
-using RiptideNetworking.Transports.RudpTransport;
 using RiptideNetworking.Utils;
 using System;
 using UnityEngine;
@@ -31,7 +30,7 @@ public enum NetworkedObjectType : byte
     projectile,
 }
 
-/// <summary> Main core of the networking - conection handling, tick counting, spawning local player, disconnecting</summary>
+/// <summary> Main core of the networking - conection handling, sending and receiving packets</summary>
 public class NetworkManager : MonoBehaviour
 {
     private static NetworkManager singleton;
@@ -50,11 +49,9 @@ public class NetworkManager : MonoBehaviour
         }
     }
 
+    public Client Client { get; private set; }
     public string ip;
     public ushort port;
-
-    public Client Client { get; private set; }
-
     private LogicTimer logicTimer;
 
     public Convar tickrate = new Convar("sv_tickrate", 32, "Ticks per second", Flags.NETWORK, 1, 128);
@@ -62,13 +59,9 @@ public class NetworkManager : MonoBehaviour
     public Dictionary<ushort, Player> playerList { get; private set; } = new Dictionary<ushort, Player>();
     public Dictionary<ushort, ClientNetworkedEntity> entitiesList { get; private set; } = new Dictionary<ushort, ClientNetworkedEntity>();
 
-    public GameObject LocalPlayerPrefab => localPlayerPrefab;
     [SerializeField] private GameObject localPlayerPrefab;
-    public GameObject PlayerPrefab => playerPrefab;
     [SerializeField] private GameObject playerPrefab;
-    public GameObject EnemyPrefab => enemyPrefab;
     [SerializeField] private GameObject enemyPrefab;
-    public GameObject ProjectilePrefab => projectilePrefab;
     [SerializeField] private GameObject projectilePrefab;
 
     public Dictionary<byte, GameObject> entityPrefabs;
@@ -76,27 +69,33 @@ public class NetworkManager : MonoBehaviour
 
     private void Awake()
     {
+        // in the start we set quality and application setting of the game
         Application.runInBackground = true;
+        QualitySettings.vSyncCount = 0;
+
         Singleton = this;
 
+        // dictionary which contains entity prefabs
         entityPrefabs = new Dictionary<byte, GameObject>()
         {
-            { (byte)NetworkedObjectType.localPlayer, Singleton.LocalPlayerPrefab },
-            { (byte)NetworkedObjectType.player, Singleton.PlayerPrefab },
-            { (byte)NetworkedObjectType.enemy, Singleton.EnemyPrefab },
-            { (byte)NetworkedObjectType.projectile, Singleton.ProjectilePrefab },
+            { (byte)NetworkedObjectType.localPlayer, Singleton.localPlayerPrefab },
+            { (byte)NetworkedObjectType.player, Singleton.playerPrefab },
+            { (byte)NetworkedObjectType.enemy, Singleton.enemyPrefab },
+            { (byte)NetworkedObjectType.projectile, Singleton.projectilePrefab },
         };
     }
 
     private void Start()
     {
-        logicTimer = new Multiplayer.LogicTimer(FixedTime);
+        // Loop called regularly every tick
+        logicTimer = new LogicTimer(FixedTime);
         logicTimer.Start();
 
+        // Logging information within certain methods
         RiptideLogger.Initialize(Debug.Log, Debug.Log, Debug.LogWarning, Debug.LogError, false);
 
+        // Riptide networking client
         Client = new Client();
-
         Client.Connected += DidConnect;
         Client.ConnectionFailed += FailedToConnect;
         Client.ClientDisconnected += PlayerLeft;
@@ -106,12 +105,11 @@ public class NetworkManager : MonoBehaviour
     private void Update()
     {
         logicTimer.Update();
-        Multiplayer.LerpManager.Update();
     }
 
     private void FixedTime()
     {
-        // Execute networking operations (handled messages etc.)
+        // Execute networking operations (sending and receiving data)
         Client.Tick();
     }
 

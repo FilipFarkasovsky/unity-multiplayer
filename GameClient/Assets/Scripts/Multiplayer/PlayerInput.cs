@@ -62,19 +62,22 @@ namespace Multiplayer
         
         private void FixedTime()
         {
+            // Update client tick to match up with server tick
+            GlobalVariables.UpdateClientTick();
+
             // Process inputs
             playerMovement.ProcessInput(inputState);
 
             // Reconciliate if there's a message from the server
             if (serverSimulationState != null) Reconciliate();
 
-
             // Get current simulationState
             SimulationState simulationState =
                 SimulationState.CurrentSimulationState(inputState, this);
 
-            // Set the simulation state
+            // Set the current simulation frame and interpolation tick
             inputState.simulationFrame = simulationFrame;
+            inputState.tick = GlobalVariables.clientTick - Utils.timeToTicks(interp.GetValue());
 
             // Determine the cache index based on on modulus operator.
             int cacheIndex = simulationFrame % STATE_CACHE_SIZE;
