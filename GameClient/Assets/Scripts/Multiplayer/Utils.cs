@@ -83,37 +83,17 @@ namespace Multiplayer
     public class GlobalVariables
     {
         public static int clientTick = 0;
+        public static int interpolationTick = 0;
         public static int serverTick = 0;
         public static float lerpAmount = 0f;
-    }
 
-    /// <summary> Updates lerpAmount and clientTick </summary>
-    public class LerpManager
-    {
-        /// <summary> Call this in update | Bad for low FPS clients| Call only when fps > tickRate because it is frame dependent so it gives more accurate results</summary>
-        public static void Update()
+        public static void UpdateClientTick()
         {
             // We dont want to lag behind the real tick by too much,
             // so just teleport to the next tick
             // The cases where this can happen are high ping/low fps
+            GlobalVariables.clientTick++;
             GlobalVariables.clientTick = Mathf.Clamp(GlobalVariables.clientTick, GlobalVariables.serverTick - 2, GlobalVariables.serverTick);
-
-            // Client (simulated) tick >= Server (real) tick, return
-            if (GlobalVariables.clientTick >= GlobalVariables.serverTick)
-                return;
-
-            // While lerp amount is or more than 1, we move to the next clientTick and reset the lerp amount
-            GlobalVariables.lerpAmount = GlobalVariables.lerpAmount + Time.unscaledDeltaTime / Utils.TickInterval();
-
-            while (GlobalVariables.lerpAmount >= 1f)
-            {
-                // Client (simulated) tick >= Server (real) tick, break
-                if (GlobalVariables.clientTick >= GlobalVariables.serverTick)
-                    break;
-
-                GlobalVariables.clientTick++;
-                GlobalVariables.lerpAmount = GlobalVariables.lerpAmount - 1;
-            }
         }
     }
 

@@ -102,7 +102,6 @@ public class NetworkManager : MonoBehaviour
 
     private void Update()
     {
-        LerpManager.Update();
         logicTimer.Update();
     }
 
