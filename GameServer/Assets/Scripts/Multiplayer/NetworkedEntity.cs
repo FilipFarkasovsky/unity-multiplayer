@@ -19,18 +19,25 @@ namespace Multiplayer
         public void OnDestroy()
         {
             NetworkManager.Singleton.entitiesList.Remove(id);
+            NetworkManager.Singleton.OnSendMessages -= OnSendMessages;
         }
 
         /// <summary> Spawns object in the scene </summary>
         public static void Spawn(NetworkedObjectType networkedObjectType, Vector3 position)
         {
             ServerNetworkedEntity entity = Instantiate(NetworkManager.Singleton.entityPrefabs[(byte)networkedObjectType], position, Quaternion.identity).GetComponent<ServerNetworkedEntity>();
+            NetworkManager.Singleton.OnSendMessages += entity.OnSendMessages;
             lastId++;
             entity.name = $"Entity {lastId}";
             entity.id = lastId;
             NetworkManager.Singleton.entitiesList.Add(lastId, entity);
 
             entity.SendSpawn();
+        }
+
+        private void OnSendMessages()
+        {
+            SendMessages.EntitySnapshot(this);
         }
 
         /// <summary>  </summary>

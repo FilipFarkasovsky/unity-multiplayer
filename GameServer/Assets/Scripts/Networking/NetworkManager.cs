@@ -50,26 +50,24 @@ public class NetworkManager : MonoBehaviour
         }
     }
     public Server Server { get; private set; }
-
     private LogicTimer logicTimer;
-
     public Convar tickrate = new Convar("sv_tickrate", 32, "Ticks per second", Flags.NETWORK, 1, 128);
     
     public int tick = 0;
     [SerializeField] private ushort port;
     public ushort maxClientCount;
 
-    public GameObject PlayerPrefab => playerPrefab;
     [SerializeField] private GameObject playerPrefab;
-    public GameObject EnemyPrefab => enemyPrefab;
     [SerializeField] private GameObject enemyPrefab;
-    public GameObject ProjectilePrefab => projectilePrefab;
     [SerializeField] private GameObject projectilePrefab;
     public Dictionary<ushort, Player> playerList { get; private set; } = new Dictionary<ushort, Player>();
     public Dictionary<ushort, ServerNetworkedEntity> entitiesList { get; private set; } = new Dictionary<ushort, ServerNetworkedEntity>();
-
     public Dictionary<byte, GameObject> entityPrefabs;
 
+    public delegate void LoopState();
+    public event LoopState OnMovement;
+    public event LoopState OnLagComenasation;
+    public event LoopState OnSendMessages;
 
     private void Awake()
     {
@@ -77,9 +75,9 @@ public class NetworkManager : MonoBehaviour
         entityPrefabs = new Dictionary<byte, GameObject>()
         {
             { (byte)NetworkedObjectType.localPlayer, null },
-            { (byte)NetworkedObjectType.player, _singleton.PlayerPrefab },
-            { (byte)NetworkedObjectType.enemy, _singleton.EnemyPrefab },
-            { (byte)NetworkedObjectType.projectile, _singleton.ProjectilePrefab },
+            { (byte)NetworkedObjectType.player, _singleton.playerPrefab },
+            { (byte)NetworkedObjectType.enemy, _singleton.enemyPrefab },
+            { (byte)NetworkedObjectType.projectile, _singleton.projectilePrefab },
         };
     }
 
@@ -87,6 +85,7 @@ public class NetworkManager : MonoBehaviour
     {
         logicTimer = new LogicTimer(FixedTime);
         logicTimer.Start();
+
         Physics.autoSimulation = false;
         Application.runInBackground = true;
         QualitySettings.vSyncCount = 0;
@@ -113,32 +112,16 @@ public class NetworkManager : MonoBehaviour
     private void FixedTime()
     {
         tick++;
-        ServerTime();
-        LagCompensation.UpdatePlayerRecords();
+        OnMovement?.Invoke();
+        OnLagComenasation?.Invoke();
+        OnSendMessages?.Invoke();
+        SendMessages.ServerTick();
         Server.Tick();
     }
 
     private void Update()
     {
         logicTimer.Update();
-    }
-
-
-    private void ServerTime()
-    {
-        for (ushort i = 1; i <= maxClientCount; i++)
-        {
-            if (playerList.TryGetValue(i, out Player player))
-                SendMessages.PlayerSnapshot(player);
-        }
-
-        for (ushort i = 1; i <= maxClientCount; i++)
-        {
-            if (entitiesList.TryGetValue(i, out ServerNetworkedEntity entity))
-                SendMessages.EntitySnapshot(entity);
-        }
-
-        SendMessages.ServerTick();
     }
 
     private void OnApplicationQuit()

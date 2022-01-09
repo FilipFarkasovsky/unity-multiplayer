@@ -25,8 +25,20 @@ namespace Multiplayer
 
         private void Start()
         {
+            NetworkManager.Singleton.OnMovement += ProcessInputs;
+            NetworkManager.Singleton.OnSendMessages += OnSendMessages;
             logicTimer = new LogicTimer(FixedTime);
             logicTimer.Start();
+        }
+        new private void OnDestroy()
+        {
+            NetworkManager.Singleton.OnMovement -= ProcessInputs;
+            NetworkManager.Singleton.playerList.Remove(id);
+        }
+
+        private void OnSendMessages()
+        {
+            SendMessages.PlayerSnapshot(this);
         }
 
         public static void Spawn(ushort id, string username)
@@ -36,7 +48,7 @@ namespace Multiplayer
             if (NetworkManager.Singleton.playerList.ContainsKey(id))
                 return;
 
-            Player player = Instantiate(NetworkManager.Singleton.PlayerPrefab, new Vector3(0f, 5f, 0f), Quaternion.identity).GetComponent<Player>();
+            Player player = Instantiate(NetworkManager.Singleton.entityPrefabs[(byte)NetworkedObjectType.player], new Vector3(0f, 5f, 0f), Quaternion.identity).GetComponent<Player>();
             player.name = $"Player {id} ({(username == "" ? "Guest" : username)})";
             player.id = id;
             player.username = username;
@@ -87,9 +99,10 @@ namespace Multiplayer
         {
             ProcessInputs();
         }
+
         private void Update()
         {
-            logicTimer.Update();
+            // logicTimer.Update();
         }
 
         private void ObtainAnimationData(bool _isFiring)
@@ -106,10 +119,6 @@ namespace Multiplayer
 
         }
 
-        new private void OnDestroy()
-        {
-            NetworkManager.Singleton.playerList.Remove(id);
-        }
 
         public void ProcessInputs()
         {
