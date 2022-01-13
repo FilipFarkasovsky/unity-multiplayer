@@ -472,3 +472,460 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003070 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.499 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1499ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (1240ms)
+			LoadAssemblies (216ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (291ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (512ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (377ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.2 MB.
+System memory in use after: 213.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3230.
+Total: 3.899300 ms (FindLiveObjects: 0.244300 ms CreateObjectMapping: 0.129100 ms MarkObjects: 3.503200 ms  DeleteObjects: 0.021300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2430.159371 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)
+  artifactKey: Guid(be4f35ddfd2c7ac4f8efe6fbb50198c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1) using Guid(be4f35ddfd2c7ac4f8efe6fbb50198c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5f5b1cfc23c0dcfae48b5e639c66164') in 0.028403 seconds 
+  Import took 0.035664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.276486 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/Ch49_nonPBR.fbx
+  artifactKey: Guid(7890c44beea753a448d5d99e1be275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/Ch49_nonPBR.fbx using Guid(7890c44beea753a448d5d99e1be275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa92e8af4389fab236ad45700c248148') in 0.374157 seconds 
+  Import took 0.382348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left turn 90.fbx
+  artifactKey: Guid(7e3aa134baf69264ba6c85f8c665c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left turn 90.fbx using Guid(7e3aa134baf69264ba6c85f8c665c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a6f20c9115896e78425183592b6f39') in 0.031907 seconds 
+  Import took 0.039115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx
+  artifactKey: Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx using Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b3477965e6e2f72719b4f0d570fb007') in 0.039203 seconds 
+  Import took 0.046126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/jump.fbx
+  artifactKey: Guid(843c0ebd9b8da264e996931ba9773792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/jump.fbx using Guid(843c0ebd9b8da264e996931ba9773792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc51dfc458b7fb8ef2c19fdfd30e94f5') in 0.027991 seconds 
+  Import took 0.035396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx
+  artifactKey: Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx using Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c82941bff6991a3e75994a68b6ed75') in 0.030734 seconds 
+  Import took 0.038057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/idle.fbx
+  artifactKey: Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/idle.fbx using Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1315d51f0c46e49e486f0b52ad60957') in 0.029930 seconds 
+  Import took 0.038801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx
+  artifactKey: Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx using Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd22531a1e536d3fee12c2ce4b8d15e39') in 0.030081 seconds 
+  Import took 0.040961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx
+  artifactKey: Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx using Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3715cd2a434b4245c6ee642d4445b946') in 0.032836 seconds 
+  Import took 0.040889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000437 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right turn.fbx
+  artifactKey: Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right turn.fbx using Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42b75e2535be52a9d46605b50626610') in 0.023155 seconds 
+  Import took 0.029731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx
+  artifactKey: Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx using Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce525711137e5533e5e187c2df75457') in 0.024968 seconds 
+  Import took 0.031368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx
+  artifactKey: Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx using Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad9af6d86fa259e9b3968752bd0b83d') in 0.024450 seconds 
+  Import took 0.035848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000633 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right turn 90.fbx
+  artifactKey: Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right turn 90.fbx using Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '291217fc98106b345a3a5dd7a410a606') in 0.022279 seconds 
+  Import took 0.028687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left turn.fbx
+  artifactKey: Guid(8f3e3cb1519a187489e494bba275dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left turn.fbx using Guid(8f3e3cb1519a187489e494bba275dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cb2f4663c7b3a7f7a87804d594d6b30') in 0.021009 seconds 
+  Import took 0.027071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.707792 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/Ch49_nonPBR.fbx
+  artifactKey: Guid(7890c44beea753a448d5d99e1be275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/Ch49_nonPBR.fbx using Guid(7890c44beea753a448d5d99e1be275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ac563ab1346d86aec2b0aa266497b2') in 0.148700 seconds 
+  Import took 0.155434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left turn 90.fbx
+  artifactKey: Guid(7e3aa134baf69264ba6c85f8c665c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left turn 90.fbx using Guid(7e3aa134baf69264ba6c85f8c665c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c9a4f684423ed81d09387febdca9ce') in 0.028568 seconds 
+  Import took 0.034564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx
+  artifactKey: Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx using Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccdce0b9dfdf9e832588d832f1f2d59c') in 0.022338 seconds 
+  Import took 0.030706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/jump.fbx
+  artifactKey: Guid(843c0ebd9b8da264e996931ba9773792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/jump.fbx using Guid(843c0ebd9b8da264e996931ba9773792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01aec8df52507ccbdd7de23429b44d46') in 0.019238 seconds 
+  Import took 0.027304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx
+  artifactKey: Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx using Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a47491eb7a6a0a883922fa688b49be1') in 0.021320 seconds 
+  Import took 0.028894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/idle.fbx
+  artifactKey: Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/idle.fbx using Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d808baafd51af8a709780abe1f6f205') in 0.022106 seconds 
+  Import took 0.030523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx
+  artifactKey: Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx using Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b3d5867879dfaccb65453999d5f8533') in 0.021326 seconds 
+  Import took 0.030647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx
+  artifactKey: Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx using Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feefac8cc320357f06772196ef31fd97') in 0.019231 seconds 
+  Import took 0.026189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right turn.fbx
+  artifactKey: Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right turn.fbx using Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b329d9eedfbf28ed7a47810f908f4292') in 0.021889 seconds 
+  Import took 0.028252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx
+  artifactKey: Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx using Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc8aeacd6fdd28fb96d8e0cf1c7d063') in 0.020804 seconds 
+  Import took 0.030016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx
+  artifactKey: Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx using Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16c52c9eafaa1afc9fdb5f7ecd799f9e') in 0.021618 seconds 
+  Import took 0.031465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right turn 90.fbx
+  artifactKey: Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right turn 90.fbx using Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b15ad7ea92dee9b82fd99b10ff655e5') in 0.021973 seconds 
+  Import took 0.031481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left turn.fbx
+  artifactKey: Guid(8f3e3cb1519a187489e494bba275dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left turn.fbx using Guid(8f3e3cb1519a187489e494bba275dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a6fd964c18e3aaa758e05c5708d7db8') in 0.024792 seconds 
+  Import took 0.035189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.427012 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/Ch49_nonPBR.fbx
+  artifactKey: Guid(7890c44beea753a448d5d99e1be275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/Ch49_nonPBR.fbx using Guid(7890c44beea753a448d5d99e1be275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb558b1c785ff8ed8f557623fbb7e5a') in 0.131758 seconds 
+  Import took 0.140237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.635972 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx
+  artifactKey: Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx using Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d2973611e8225356e4cf895a3cfff97') in 0.016009 seconds 
+  Import took 0.023014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.058855 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/idle.fbx
+  artifactKey: Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/idle.fbx using Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8036e39b3ad4ebfb0843137e0f8e45c6') in 0.027874 seconds 
+  Import took 0.035261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left turn 90.fbx
+  artifactKey: Guid(7e3aa134baf69264ba6c85f8c665c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left turn 90.fbx using Guid(7e3aa134baf69264ba6c85f8c665c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28faf529dc598b913172b77daa4a860') in 0.031106 seconds 
+  Import took 0.038955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx
+  artifactKey: Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx using Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '444012c7788bef61aaeed6bc03f646f6') in 0.026366 seconds 
+  Import took 0.034995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/jump.fbx
+  artifactKey: Guid(843c0ebd9b8da264e996931ba9773792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/jump.fbx using Guid(843c0ebd9b8da264e996931ba9773792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf0ffbf9987a05d36220b0f69a254cf') in 0.020988 seconds 
+  Import took 0.027694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000731 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx
+  artifactKey: Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx using Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f350f3bbe2bb76304a21a73868800f7a') in 0.020217 seconds 
+  Import took 0.028473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx
+  artifactKey: Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx using Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a2228903bbffbc1819ca900e31eab5') in 0.032286 seconds 
+  Import took 0.039274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx
+  artifactKey: Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx using Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02103e31feae8c5bd176aeb023b90102') in 0.023411 seconds 
+  Import took 0.030929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right turn.fbx
+  artifactKey: Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right turn.fbx using Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed40871d083db4c09963f404c76989c0') in 0.023039 seconds 
+  Import took 0.030685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx
+  artifactKey: Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx using Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a70ebc60b47e491910d0c1dc0ab2123a') in 0.021186 seconds 
+  Import took 0.030064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right turn 90.fbx
+  artifactKey: Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right turn 90.fbx using Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7495aa2720bf9d85c72d9e3c6deb6f70') in 0.025805 seconds 
+  Import took 0.034179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left turn.fbx
+  artifactKey: Guid(8f3e3cb1519a187489e494bba275dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left turn.fbx using Guid(8f3e3cb1519a187489e494bba275dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29dc7bf07acc18c05d31d61a03544207') in 0.020864 seconds 
+  Import took 0.029976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 296.935136 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx
+  artifactKey: Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx using Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c36c507f8c46b63ac3d3eade1cdf2ee9') in 0.018528 seconds 
+  Import took 0.028864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.898883 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx
+  artifactKey: Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx using Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d42e15124481312b1990894518452b') in 0.022014 seconds 
+  Import took 0.031189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 140.916616 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx
+  artifactKey: Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx using Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82e044ae525b2131d994753428fe452') in 0.019137 seconds 
+  Import took 0.028359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.325737 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx
+  artifactKey: Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx using Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d213935dd3a0e5921a03769f8903308') in 0.027945 seconds 
+  Import took 0.036386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.294718 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx
+  artifactKey: Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx using Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c2f3a08c183c0eceefd77fc9e0dd0a') in 0.018185 seconds 
+  Import took 0.026437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.875880 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx
+  artifactKey: Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx using Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0377c92d7680ba27ae81a30ea34e7341') in 0.018119 seconds 
+  Import took 0.025623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.811166 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx
+  artifactKey: Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx using Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0caedaa1654d263da61f268cc3cfb223') in 0.018031 seconds 
+  Import took 0.029585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 181.059397 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx
+  artifactKey: Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx using Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51fd6975704012f5f19641e7dd90e78') in 0.018412 seconds 
+  Import took 0.026266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 127.578584 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx
+  artifactKey: Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx using Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb9e1e14bf89f496fc1e7eca4dbd5f3') in 0.019405 seconds 
+  Import took 0.031660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.956252 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx
+  artifactKey: Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx using Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e64ec9135cecec390caa59beed38a75') in 0.016186 seconds 
+  Import took 0.024243 seconds .
+
