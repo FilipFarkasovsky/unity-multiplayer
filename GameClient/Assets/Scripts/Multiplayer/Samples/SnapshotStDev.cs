@@ -14,153 +14,128 @@ namespace Multiplayer.Samples
             public float Time;
         }
 
-        [Header("Debug properties")]
-        [SerializeField] float TimeLastSnapshotReceived;
-        [SerializeField] float TimeSinceLastSnapshotReceived;
+        public GameObject Server;
+        public GameObject Client;
 
-        [SerializeField] float DelayTarget;
-        [SerializeField] float RealDelayTarget;
+        StandardDeviation _cSnapshotDeliveryDeltaAvg;
+        float _lastSnapshot;
 
-        [SerializeField] float MaxServerTimeReceived;
-        [SerializeField] float ScaledInterpolationTime;
-        private float NormalInterpolationTime;
+        float _cTimeLastSnapshotReceived;
+        float _cTimeSinceLastSnapshotReceived;
 
-        [Header("Interpolation properties")]
-        [SerializeField] float InterpTimeScale = 1;
+        [SerializeField] float _cDelayTarget;
+        [SerializeField] float _cRealDelayTarget;
+
+
+        [SerializeField] float _cMaxServerTimeReceived;
+        [SerializeField] float _cInterpolationTime;
+        [SerializeField] float _cInterpTimeScale = 1;
+
         [SerializeField] int SNAPSHOT_OFFSET_COUNT = 2;
 
-        Queue<Snapshot> NetworkSimQueue = new Queue<Snapshot>();
-        List<Snapshot> Snapshots = new List<Snapshot>();
+        Queue<Snapshot> _cNetworkSimQueue = new Queue<Snapshot>();
+        List<Snapshot> _cSnapshots = new List<Snapshot>();
 
-        private const int SNAPSHOT_RATE = 32;
-        private const float SNAPSHOT_INTERVAL = 1.0f / SNAPSHOT_RATE;
+        const int SNAPSHOT_RATE = 32;
+        const float SNAPSHOT_INTERVAL = 1.0f / SNAPSHOT_RATE;
 
-        // We will set up tresholds
-        [SerializeField] float INTERP_NEGATIVE_THRESHOLD = SNAPSHOT_INTERVAL * 0.5f;
-        [SerializeField] float INTERP_POSITIVE_THRESHOLD = SNAPSHOT_INTERVAL * 2f;
-
-        private StandardDeviation SnapshotDeliveryDeltaAvg;
-
-        private TransformUpdate updateFrom, updateTo;
-        float interpAlpha;
-
+        [SerializeField] float INTERP_NEGATIVE_THRESHOLD = 1;
+        [SerializeField] float INTERP_POSITIVE_THRESHOLD = 2;
         void Start()
         {
-            updateFrom = new TransformUpdate(0, Time.time, transform.position, transform.rotation);
-            updateTo = new TransformUpdate(0, Time.time, transform.position, transform.rotation);
+            _cInterpTimeScale = 1;
 
-            InterpTimeScale = 1;
-
-            SnapshotDeliveryDeltaAvg.Initialize(SNAPSHOT_RATE);
+            _cSnapshotDeliveryDeltaAvg.Initialize(SNAPSHOT_RATE);
         }
-
 
         void Update()
         {
+            ServerMovement();
+            ServerSnapshot();
+
+            ClientUpdateInterpolationTime();
             ClientReceiveDataFromServer();
             ClientRenderLatestPostion();
         }
 
-        /// <summary> Vyratat hlavne timeScale a dat pridat snapshoty do List<Snapshot> </summary>
         void ClientReceiveDataFromServer()
-        {
-            // time when we are going to interpolate - Current time - interpolation interval
-            ScaledInterpolationTime += (Time.unscaledDeltaTime * InterpTimeScale);
-            NormalInterpolationTime += (Time.unscaledDeltaTime);
-            TimeSinceLastSnapshotReceived += Time.unscaledDeltaTime;
-
-            //checknut
-            // reálne meškanie === reálny èas aký je teraz - èas kedy má zaèa interpolácia - meškanie 
-            RealDelayTarget = (MaxServerTimeReceived + TimeSinceLastSnapshotReceived - ScaledInterpolationTime) - DelayTarget;
-
-            // zistit timeScale
-            if (RealDelayTarget > (SNAPSHOT_INTERVAL * INTERP_POSITIVE_THRESHOLD))
-                InterpTimeScale = 1.05f;
-            else if (RealDelayTarget < (SNAPSHOT_INTERVAL * -INTERP_NEGATIVE_THRESHOLD))
-                InterpTimeScale = 0.95f;
-            else InterpTimeScale = 1.0f;
-
-            // Time since last snapshot received
-            // --------------------  presunut na line 60 ku interpolationTime -----------------------
-        }
-
-        private void ReceivingSnapshot()
         {
             var received = false;
 
-            while (NetworkSimQueue.Count > 0)
+            while (_cNetworkSimQueue.Count > 0)
             {
-                if (Snapshots.Count == 0)
-                {
-                    ScaledInterpolationTime = NetworkSimQueue.Peek().Time - (SNAPSHOT_INTERVAL * SNAPSHOT_OFFSET_COUNT);
-                    NormalInterpolationTime = NetworkSimQueue.Peek().Time - (SNAPSHOT_INTERVAL * SNAPSHOT_OFFSET_COUNT);
-                }
+                if (_cSnapshots.Count == 0)
+                    _cInterpolationTime = _cNetworkSimQueue.Peek().Time - (SNAPSHOT_INTERVAL * SNAPSHOT_OFFSET_COUNT);
 
-                var snapshot = NetworkSimQueue.Dequeue();
+                var snapshot = _cNetworkSimQueue.Dequeue();
 
-                Snapshots.Add(snapshot);
-
-                // Max time when we are interpolating
-                MaxServerTimeReceived = Math.Max(MaxServerTimeReceived, snapshot.Time);
+                _cSnapshots.Add(snapshot);
+                _cMaxServerTimeReceived = Math.Max(_cMaxServerTimeReceived, snapshot.Time);
 
                 received = true;
             }
 
-            // if we had received server snapshot
             if (received)
             {
-                // we sample the current time - the time of the last receivaed packet
-                SnapshotDeliveryDeltaAvg.Integrate(Time.time - TimeLastSnapshotReceived);
-                // Debug.Log(Time.time - TimeLastSnapshotReceived);
-                TimeLastSnapshotReceived = Time.time;
-                TimeSinceLastSnapshotReceived = 0f;
+                _cSnapshotDeliveryDeltaAvg.Integrate(Time.time - _cTimeLastSnapshotReceived);
+                _cTimeLastSnapshotReceived = Time.time;
+                _cTimeSinceLastSnapshotReceived = 0f;
 
-                // checknut
-                // meškanie     ===       dåžka interpolácie + priemer hodnôt + 2 * smerodajná odchýlka
-                DelayTarget = (SNAPSHOT_INTERVAL * SNAPSHOT_OFFSET_COUNT) + SnapshotDeliveryDeltaAvg.Mean + (SnapshotDeliveryDeltaAvg.Value * 2f);
+                _cDelayTarget = (SNAPSHOT_INTERVAL * SNAPSHOT_OFFSET_COUNT) + _cSnapshotDeliveryDeltaAvg.Mean + (_cSnapshotDeliveryDeltaAvg.Value * 2f);
             }
+
+            _cRealDelayTarget = (_cMaxServerTimeReceived + _cTimeSinceLastSnapshotReceived - _cInterpolationTime) - _cDelayTarget;
+
+            if (_cRealDelayTarget > (SNAPSHOT_INTERVAL * INTERP_POSITIVE_THRESHOLD))
+                _cInterpTimeScale = 1.05f;
+            else if (_cRealDelayTarget < (SNAPSHOT_INTERVAL * -INTERP_NEGATIVE_THRESHOLD))
+                _cInterpTimeScale = 0.95f;
+            else _cInterpTimeScale = 1.0f;
+
+            _cTimeSinceLastSnapshotReceived += Time.unscaledDeltaTime;
+        }
+
+        void ClientUpdateInterpolationTime()
+        {
+            _cInterpolationTime += (Time.unscaledDeltaTime * _cInterpTimeScale);
         }
 
         void ClientRenderLatestPostion()
         {
-            if (Snapshots.Count > 0)
+            if (_cSnapshots.Count > 0)
             {
-                // zrefaktorizova
-                // možno použi Utils.TransformUpdate
+                var interpFrom = default(Vector3);
+                var interpTo = default(Vector3);
+                var interpAlpha = default(float);
 
-                // zoradime snapchoty
-                for (int i = 0; i < Snapshots.Count; ++i)
+                for (int i = 0; i < _cSnapshots.Count; ++i)
                 {
-                    // ak je to naposledy pridany snapchot
-                    // a sa nam ziaden iny interpolovat nepodarilo
-                    // stane sa to ak je prilis velky lag
-                    if (i + 1 == Snapshots.Count)
+                    if (i + 1 == _cSnapshots.Count)
                     {
-                        updateFrom.position = updateTo.position = Snapshots[i].Position;
-                        updateFrom.rotation = updateTo.rotation = Snapshots[i].Rotation;
-                        interpAlpha = 0;
+                        if (_cSnapshots[0].Time > _cInterpolationTime)
+                        {
+                            interpFrom = interpTo = _cSnapshots[0].Position;
+                            interpAlpha = 0;
+                        }
+                        else
+                        {
+                            interpFrom = interpTo = _cSnapshots[i].Position;
+                            interpAlpha = 0;
+                        }
                     }
                     else
                     {
+
                         var f = i;
                         var t = i + 1;
 
-                        // snazime sa najst snapshot ktory je na hranici interpolovanosti
-
-                        // normalInterpolationTime nefunguje dobre ak nestihne dojst snapshot 
-                        // lebo potom neexistuje    Snapshots[t].Time >= NormalInterpolationTime
-                        if (Snapshots[f].Time <= ScaledInterpolationTime && Snapshots[t].Time >= ScaledInterpolationTime)
+                        if (_cSnapshots[f].Time <= _cInterpolationTime && _cSnapshots[t].Time >= _cInterpolationTime)
                         {
-                            updateFrom.position = Snapshots[f].Position;
-                            updateTo.position = Snapshots[t].Position;
+                            interpFrom = _cSnapshots[f].Position;
+                            interpTo = _cSnapshots[t].Position;
 
-                            updateFrom.rotation = Snapshots[f].Rotation;
-                            updateTo.rotation = Snapshots[t].Rotation;
-
-                            // 
-                            var current = ScaledInterpolationTime - Snapshots[f].Time;
-                            // time between snapshots
-                            var range = Snapshots[t].Time - Snapshots[f].Time;
+                            var range = _cSnapshots[t].Time - _cSnapshots[f].Time;
+                            var current = _cInterpolationTime - _cSnapshots[f].Time;
 
                             interpAlpha = Mathf.Clamp01(current / range);
 
@@ -169,22 +144,34 @@ namespace Multiplayer.Samples
                     }
                 }
 
-                // Lerping
-                transform.position = Vector3.Lerp(updateFrom.position, updateTo.position, interpAlpha);
-                transform.rotation = Quaternion.Slerp(updateFrom.rotation, updateTo.rotation, interpAlpha);
+                Client.transform.position = Vector3.Lerp(interpFrom, interpTo, interpAlpha);
             }
         }
 
-        public void ServerSnapshot(Vector3 position, Quaternion rotation, float time)
+        void ServerMovement()
         {
-            NetworkSimQueue.Enqueue(new Snapshot
-            {
-                Time = time,
-                Position = position,
-                Rotation = rotation,
-            });
+            Vector3 pos;
+            pos = Server.transform.position;
+            pos.x = Mathf.PingPong(Time.time * 5, 10f) - 5f;
 
-            ReceivingSnapshot();
+            Server.transform.position = pos;
         }
+
+        [SerializeField, Range(0, 0.4f)] float random;
+
+        void ServerSnapshot()
+        {
+            if (_lastSnapshot + Time.fixedDeltaTime < Time.time)
+            {
+                _lastSnapshot = Time.time;
+                _cNetworkSimQueue.Enqueue(new Snapshot
+                {
+                    Time = _lastSnapshot,
+                    Position = Server.transform.position,
+                    DeliveryTime = Time.time + random
+                });
+            }
+        }
+
+
     }
-}
