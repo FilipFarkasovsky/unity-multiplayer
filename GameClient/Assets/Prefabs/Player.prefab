@@ -64,17 +64,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 550459fd92ac5814e9d5086ebf9874f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 0}
   mode: 0
   target: 4
-  playerAnimation: {fileID: 0}
+  playerAnimation: {fileID: 2759265750981146662}
   Delay: 0
   WaitForLerp: 0
   PreviousPosition: {x: 0, y: 0, z: 0}
   NewPosition: {x: 0, y: 0, z: 0}
   PreviousTime: 0
   CurrentTime: 0
-  isCube: 0
   TimeLastSnapshotReceived: 0
   TimeSinceLastSnapshotReceived: 0
   DelayTarget: 0
