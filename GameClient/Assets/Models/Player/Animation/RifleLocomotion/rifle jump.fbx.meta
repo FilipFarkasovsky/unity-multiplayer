@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3a270e344cbf879438c23bf3885248c6
+guid: 793bd9d8a798a8341bbe8f11d5144be3
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -18,8 +18,7 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: "Invalid copied Avatar Rig Configuration:\n\tNo human bone found.
-      Ensure both rig type match\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -27,7 +26,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -850,7 +849,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 7890c44beea753a448d5d99e1be275c5, type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 903bd754a9c1e964da05c18b936b3d46, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1

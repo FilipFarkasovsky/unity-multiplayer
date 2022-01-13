@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Multiplayer
+namespace Multiplayer.Samples
 {
     public class SnapshotStDev : MonoBehaviour
     {
@@ -13,59 +13,6 @@ namespace Multiplayer
             public Quaternion Rotation;
             public float Time;
         }
-
-        //class TransformUpdate
-        //{
-        //    public static TransformUpdate zero = new TransformUpdate(0, 0, 0, Vector3.zero, Vector3.zero, Quaternion.identity, Quaternion.identity);
-
-        //    public int tick;
-
-        //    public float time;
-        //    public float lastTime;
-
-        //    public Vector3 position;
-        //    public Vector3 lastPosition;
-
-        //    public Quaternion rotation;
-        //    public Quaternion lastRotation;
-
-        //    internal TransformUpdate(int _tick, float _time, float _lastTime, Vector3 _position, Vector3 _lastPosition)
-        //    {
-        //        tick = _tick;
-        //        time = _time;
-        //        lastTime = _lastTime;
-
-        //        position = _position;
-        //        lastPosition = _lastPosition;
-
-        //        rotation = Quaternion.identity;
-        //    }
-
-        //    internal TransformUpdate(int _tick, float _time, float _lastTime, Quaternion _rotation, Quaternion _lastRotation)
-        //    {
-        //        tick = _tick;
-        //        time = _time;
-        //        lastTime = _lastTime;
-
-        //        position = Vector3.zero;
-
-        //        rotation = _rotation;
-        //        lastRotation = _lastRotation;
-        //    }
-
-        //    internal TransformUpdate(int _tick, float _time, float _lastTime, Vector3 _position, Vector3 _lastPosition, Quaternion _rotation, Quaternion _lastRotation)
-        //    {
-        //        tick = _tick;
-        //        time = _time;
-        //        lastTime = _lastTime;
-
-        //        position = _position;
-        //        lastPosition = _lastPosition;
-
-        //        rotation = _rotation;
-        //        lastRotation = _lastRotation;
-        //    }
-        //}
 
         [Header("Debug properties")]
         [SerializeField] float TimeLastSnapshotReceived;

@@ -1,0 +1,1947 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.25f1 (9b9180224418) revision 10195328'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Professional' Language: 'sk' Physical Memory: 16281 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.25f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Admin/Desktop/unity-multiplayer/GameClient
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54686
+Successfully changed project path to: C:/Users/Admin/Desktop/unity-multiplayer/GameClient
+C:/Users/Admin/Desktop/unity-multiplayer/GameClient
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 68.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.25f1 (9b9180224418)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Admin/Desktop/unity-multiplayer/GameClient/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
+    Vendor:   
+    VRAM:     2048 MB
+    Driver:   20.19.15.4549
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56212
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004984 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 65.70 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.867 seconds
+Domain Reload Profiling:
+	ReloadAssembly (868ms)
+		BeginReloadAssembly (80ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (687ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (210ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (247ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (66ms)
+				BeforeProcessingInitializeOnLoad (22ms)
+				ProcessInitializeOnLoadAttributes (114ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003505 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 56.11 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.176 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2177ms)
+		BeginReloadAssembly (202ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1882ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (321ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (82ms)
+			SetupLoadedEditorAssemblies (1196ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (56ms)
+				BeforeProcessingInitializeOnLoad (125ms)
+				ProcessInitializeOnLoadAttributes (990ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2717 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.2 MB.
+System memory in use after: 203.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3170.
+Total: 3.911900 ms (FindLiveObjects: 0.251100 ms CreateObjectMapping: 0.139500 ms MarkObjects: 3.433400 ms  DeleteObjects: 0.086800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/LocalPlayer.prefab
+  artifactKey: Guid(771f4599d98028948ae5a82de1deb851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LocalPlayer.prefab using Guid(771f4599d98028948ae5a82de1deb851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9f9b7937b32e69cbbbd6b04e5e50b3') in 0.341381 seconds 
+  Import took 0.348462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000469 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(14efa3bf9f538db4fba33c936133a6b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(14efa3bf9f538db4fba33c936133a6b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e0bcc3dbd9bbe4260537d20798c1142') in 0.045575 seconds 
+  Import took 0.052032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000417 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(d4b255f9feb42fb49b103418ae4f983a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(d4b255f9feb42fb49b103418ae4f983a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05bd39dbc15807ba81c078a24cf2b97f') in 0.409733 seconds 
+  Import took 0.418974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000421 seconds.
+  path: Assets/Prefabs/TestInterpolation.prefab
+  artifactKey: Guid(efa326f91579ebe4db351d501db43a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TestInterpolation.prefab using Guid(efa326f91579ebe4db351d501db43a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '364d7f3bf12706571b0bcf7bcf713f97') in 0.059898 seconds 
+  Import took 0.067181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/Prefabs/Sphere (2).prefab
+  artifactKey: Guid(c28b326594d547c4681af18455176f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sphere (2).prefab using Guid(c28b326594d547c4681af18455176f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e56d5ff52d9245bfb1d6978394243460') in 0.047633 seconds 
+  Import took 0.055767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Prefabs/Prot_Player.prefab
+  artifactKey: Guid(8e169f83b3e546b428f2dec96283ec7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Prot_Player.prefab using Guid(8e169f83b3e546b428f2dec96283ec7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc065e2062ce8e5307f4fe399547ebe2') in 0.053393 seconds 
+  Import took 0.060585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Prefabs/Prot_LocalPlayer.prefab
+  artifactKey: Guid(b92d19da70d3f5e45b69622abd286740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Prot_LocalPlayer.prefab using Guid(b92d19da70d3f5e45b69622abd286740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14a56e6ddb2ea2033ce0cfd7130bbaa2') in 0.043225 seconds 
+  Import took 0.049945 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.022733 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.85 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 12.812 seconds
+Domain Reload Profiling:
+	ReloadAssembly (12816ms)
+		BeginReloadAssembly (1227ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (52ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (284ms)
+		EndReloadAssembly (10879ms)
+			LoadAssemblies (1064ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (2966ms)
+			ReleaseScriptCaches (7ms)
+			RebuildScriptCaches (588ms)
+			SetupLoadedEditorAssemblies (4808ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (75ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (1023ms)
+				ProcessInitializeOnLoadAttributes (3528ms)
+				ProcessInitializeOnLoadMethodAttributes (65ms)
+				AfterProcessingInitializeOnLoad (103ms)
+				EditorAssembliesLoaded (3ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (213ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.1 MB.
+System memory in use after: 213.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3220.
+Total: 20.988000 ms (FindLiveObjects: 1.212500 ms CreateObjectMapping: 1.626400 ms MarkObjects: 18.089900 ms  DeleteObjects: 0.056400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003363 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.526 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1527ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (18ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1270ms)
+			LoadAssemblies (166ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (325ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (549ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (401ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.2 MB.
+System memory in use after: 213.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3222.
+Total: 4.375200 ms (FindLiveObjects: 0.335200 ms CreateObjectMapping: 0.291700 ms MarkObjects: 3.727000 ms  DeleteObjects: 0.020100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009904 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  9.947 seconds
+Domain Reload Profiling:
+	ReloadAssembly (9950ms)
+		BeginReloadAssembly (1190ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (49ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (260ms)
+		EndReloadAssembly (8066ms)
+			LoadAssemblies (1114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1834ms)
+			ReleaseScriptCaches (10ms)
+			RebuildScriptCaches (395ms)
+			SetupLoadedEditorAssemblies (3985ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (45ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (880ms)
+				ProcessInitializeOnLoadAttributes (2950ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (59ms)
+				EditorAssembliesLoaded (17ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (135ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.2 MB.
+System memory in use after: 213.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3224.
+Total: 27.054900 ms (FindLiveObjects: 0.688400 ms CreateObjectMapping: 0.402200 ms MarkObjects: 25.908000 ms  DeleteObjects: 0.054000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003732 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.555 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1556ms)
+		BeginReloadAssembly (151ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1323ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (358ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (599ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (453ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.2 MB.
+System memory in use after: 213.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3226.
+Total: 4.163900 ms (FindLiveObjects: 0.466400 ms CreateObjectMapping: 0.267000 ms MarkObjects: 3.410600 ms  DeleteObjects: 0.018400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004678 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.99 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.545 seconds
+Domain Reload Profiling:
+	ReloadAssembly (6547ms)
+		BeginReloadAssembly (651ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (23ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (82ms)
+		EndReloadAssembly (5597ms)
+			LoadAssemblies (667ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1204ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (268ms)
+			SetupLoadedEditorAssemblies (2337ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (50ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (966ms)
+				ProcessInitializeOnLoadAttributes (1286ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (21ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (43ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.2 MB.
+System memory in use after: 213.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3228.
+Total: 4.257700 ms (FindLiveObjects: 0.397900 ms CreateObjectMapping: 0.157500 ms MarkObjects: 3.671600 ms  DeleteObjects: 0.028900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003070 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.499 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1499ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (1240ms)
+			LoadAssemblies (216ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (291ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (512ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (377ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.2 MB.
+System memory in use after: 213.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3230.
+Total: 3.899300 ms (FindLiveObjects: 0.244300 ms CreateObjectMapping: 0.129100 ms MarkObjects: 3.503200 ms  DeleteObjects: 0.021300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2430.159371 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)
+  artifactKey: Guid(be4f35ddfd2c7ac4f8efe6fbb50198c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1) using Guid(be4f35ddfd2c7ac4f8efe6fbb50198c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5f5b1cfc23c0dcfae48b5e639c66164') in 0.028403 seconds 
+  Import took 0.035664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.276486 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/Ch49_nonPBR.fbx
+  artifactKey: Guid(7890c44beea753a448d5d99e1be275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/Ch49_nonPBR.fbx using Guid(7890c44beea753a448d5d99e1be275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa92e8af4389fab236ad45700c248148') in 0.374157 seconds 
+  Import took 0.382348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left turn 90.fbx
+  artifactKey: Guid(7e3aa134baf69264ba6c85f8c665c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left turn 90.fbx using Guid(7e3aa134baf69264ba6c85f8c665c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a6f20c9115896e78425183592b6f39') in 0.031907 seconds 
+  Import took 0.039115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx
+  artifactKey: Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx using Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b3477965e6e2f72719b4f0d570fb007') in 0.039203 seconds 
+  Import took 0.046126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/jump.fbx
+  artifactKey: Guid(843c0ebd9b8da264e996931ba9773792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/jump.fbx using Guid(843c0ebd9b8da264e996931ba9773792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc51dfc458b7fb8ef2c19fdfd30e94f5') in 0.027991 seconds 
+  Import took 0.035396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx
+  artifactKey: Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx using Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c82941bff6991a3e75994a68b6ed75') in 0.030734 seconds 
+  Import took 0.038057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/idle.fbx
+  artifactKey: Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/idle.fbx using Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1315d51f0c46e49e486f0b52ad60957') in 0.029930 seconds 
+  Import took 0.038801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx
+  artifactKey: Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx using Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd22531a1e536d3fee12c2ce4b8d15e39') in 0.030081 seconds 
+  Import took 0.040961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx
+  artifactKey: Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx using Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3715cd2a434b4245c6ee642d4445b946') in 0.032836 seconds 
+  Import took 0.040889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000437 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right turn.fbx
+  artifactKey: Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right turn.fbx using Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42b75e2535be52a9d46605b50626610') in 0.023155 seconds 
+  Import took 0.029731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx
+  artifactKey: Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx using Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce525711137e5533e5e187c2df75457') in 0.024968 seconds 
+  Import took 0.031368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx
+  artifactKey: Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx using Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad9af6d86fa259e9b3968752bd0b83d') in 0.024450 seconds 
+  Import took 0.035848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000633 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right turn 90.fbx
+  artifactKey: Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right turn 90.fbx using Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '291217fc98106b345a3a5dd7a410a606') in 0.022279 seconds 
+  Import took 0.028687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left turn.fbx
+  artifactKey: Guid(8f3e3cb1519a187489e494bba275dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left turn.fbx using Guid(8f3e3cb1519a187489e494bba275dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cb2f4663c7b3a7f7a87804d594d6b30') in 0.021009 seconds 
+  Import took 0.027071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.707792 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/Ch49_nonPBR.fbx
+  artifactKey: Guid(7890c44beea753a448d5d99e1be275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/Ch49_nonPBR.fbx using Guid(7890c44beea753a448d5d99e1be275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ac563ab1346d86aec2b0aa266497b2') in 0.148700 seconds 
+  Import took 0.155434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left turn 90.fbx
+  artifactKey: Guid(7e3aa134baf69264ba6c85f8c665c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left turn 90.fbx using Guid(7e3aa134baf69264ba6c85f8c665c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c9a4f684423ed81d09387febdca9ce') in 0.028568 seconds 
+  Import took 0.034564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx
+  artifactKey: Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx using Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccdce0b9dfdf9e832588d832f1f2d59c') in 0.022338 seconds 
+  Import took 0.030706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/jump.fbx
+  artifactKey: Guid(843c0ebd9b8da264e996931ba9773792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/jump.fbx using Guid(843c0ebd9b8da264e996931ba9773792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01aec8df52507ccbdd7de23429b44d46') in 0.019238 seconds 
+  Import took 0.027304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx
+  artifactKey: Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx using Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a47491eb7a6a0a883922fa688b49be1') in 0.021320 seconds 
+  Import took 0.028894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/idle.fbx
+  artifactKey: Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/idle.fbx using Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d808baafd51af8a709780abe1f6f205') in 0.022106 seconds 
+  Import took 0.030523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx
+  artifactKey: Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx using Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b3d5867879dfaccb65453999d5f8533') in 0.021326 seconds 
+  Import took 0.030647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx
+  artifactKey: Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx using Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feefac8cc320357f06772196ef31fd97') in 0.019231 seconds 
+  Import took 0.026189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right turn.fbx
+  artifactKey: Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right turn.fbx using Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b329d9eedfbf28ed7a47810f908f4292') in 0.021889 seconds 
+  Import took 0.028252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx
+  artifactKey: Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx using Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc8aeacd6fdd28fb96d8e0cf1c7d063') in 0.020804 seconds 
+  Import took 0.030016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx
+  artifactKey: Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx using Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16c52c9eafaa1afc9fdb5f7ecd799f9e') in 0.021618 seconds 
+  Import took 0.031465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right turn 90.fbx
+  artifactKey: Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right turn 90.fbx using Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b15ad7ea92dee9b82fd99b10ff655e5') in 0.021973 seconds 
+  Import took 0.031481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left turn.fbx
+  artifactKey: Guid(8f3e3cb1519a187489e494bba275dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left turn.fbx using Guid(8f3e3cb1519a187489e494bba275dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a6fd964c18e3aaa758e05c5708d7db8') in 0.024792 seconds 
+  Import took 0.035189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.427012 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/Ch49_nonPBR.fbx
+  artifactKey: Guid(7890c44beea753a448d5d99e1be275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/Ch49_nonPBR.fbx using Guid(7890c44beea753a448d5d99e1be275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb558b1c785ff8ed8f557623fbb7e5a') in 0.131758 seconds 
+  Import took 0.140237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.635972 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx
+  artifactKey: Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx using Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d2973611e8225356e4cf895a3cfff97') in 0.016009 seconds 
+  Import took 0.023014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.058855 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/idle.fbx
+  artifactKey: Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/idle.fbx using Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8036e39b3ad4ebfb0843137e0f8e45c6') in 0.027874 seconds 
+  Import took 0.035261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left turn 90.fbx
+  artifactKey: Guid(7e3aa134baf69264ba6c85f8c665c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left turn 90.fbx using Guid(7e3aa134baf69264ba6c85f8c665c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28faf529dc598b913172b77daa4a860') in 0.031106 seconds 
+  Import took 0.038955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx
+  artifactKey: Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx using Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '444012c7788bef61aaeed6bc03f646f6') in 0.026366 seconds 
+  Import took 0.034995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/jump.fbx
+  artifactKey: Guid(843c0ebd9b8da264e996931ba9773792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/jump.fbx using Guid(843c0ebd9b8da264e996931ba9773792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf0ffbf9987a05d36220b0f69a254cf') in 0.020988 seconds 
+  Import took 0.027694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000731 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx
+  artifactKey: Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx using Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f350f3bbe2bb76304a21a73868800f7a') in 0.020217 seconds 
+  Import took 0.028473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx
+  artifactKey: Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx using Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a2228903bbffbc1819ca900e31eab5') in 0.032286 seconds 
+  Import took 0.039274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx
+  artifactKey: Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx using Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02103e31feae8c5bd176aeb023b90102') in 0.023411 seconds 
+  Import took 0.030929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right turn.fbx
+  artifactKey: Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right turn.fbx using Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed40871d083db4c09963f404c76989c0') in 0.023039 seconds 
+  Import took 0.030685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx
+  artifactKey: Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx using Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a70ebc60b47e491910d0c1dc0ab2123a') in 0.021186 seconds 
+  Import took 0.030064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right turn 90.fbx
+  artifactKey: Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right turn 90.fbx using Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7495aa2720bf9d85c72d9e3c6deb6f70') in 0.025805 seconds 
+  Import took 0.034179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left turn.fbx
+  artifactKey: Guid(8f3e3cb1519a187489e494bba275dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left turn.fbx using Guid(8f3e3cb1519a187489e494bba275dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29dc7bf07acc18c05d31d61a03544207') in 0.020864 seconds 
+  Import took 0.029976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 296.935136 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx
+  artifactKey: Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx using Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c36c507f8c46b63ac3d3eade1cdf2ee9') in 0.018528 seconds 
+  Import took 0.028864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.898883 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx
+  artifactKey: Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx using Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d42e15124481312b1990894518452b') in 0.022014 seconds 
+  Import took 0.031189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 140.916616 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx
+  artifactKey: Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx using Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82e044ae525b2131d994753428fe452') in 0.019137 seconds 
+  Import took 0.028359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.325737 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx
+  artifactKey: Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/running.fbx using Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d213935dd3a0e5921a03769f8903308') in 0.027945 seconds 
+  Import took 0.036386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.294718 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx
+  artifactKey: Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/walking.fbx using Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c2f3a08c183c0eceefd77fc9e0dd0a') in 0.018185 seconds 
+  Import took 0.026437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.875880 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx
+  artifactKey: Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx using Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0377c92d7680ba27ae81a30ea34e7341') in 0.018119 seconds 
+  Import took 0.025623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.811166 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx
+  artifactKey: Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe.fbx using Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0caedaa1654d263da61f268cc3cfb223') in 0.018031 seconds 
+  Import took 0.029585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 181.059397 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx
+  artifactKey: Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/right strafe walking.fbx using Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51fd6975704012f5f19641e7dd90e78') in 0.018412 seconds 
+  Import took 0.026266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 127.578584 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx
+  artifactKey: Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe walking.fbx using Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb9e1e14bf89f496fc1e7eca4dbd5f3') in 0.019405 seconds 
+  Import took 0.031660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.956252 seconds.
+  path: Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx
+  artifactKey: Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion Pack (1)/left strafe.fbx using Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e64ec9135cecec390caa59beed38a75') in 0.016186 seconds 
+  Import took 0.024243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 622.791374 seconds.
+  path: Assets/Models/Player/PlayerController.controller
+  artifactKey: Guid(5f790334f56d66a4d92855b574d8c252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/PlayerController.controller using Guid(5f790334f56d66a4d92855b574d8c252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8031dcc686391384192280b799d025') in 0.074197 seconds 
+  Import took 0.084263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.652169 seconds.
+  path: Assets/Models/Player/Animation/Rifle Aiming Idle.anim
+  artifactKey: Guid(c0e84085d1d86ce46bfb5d109b08b1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Rifle Aiming Idle.anim using Guid(c0e84085d1d86ce46bfb5d109b08b1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b181f2dad940869f659e40a2ef816fa') in 0.075431 seconds 
+  Import took 0.092695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.736275 seconds.
+  path: Assets/Models/Player/Animation/Locomotion
+  artifactKey: Guid(be4f35ddfd2c7ac4f8efe6fbb50198c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion using Guid(be4f35ddfd2c7ac4f8efe6fbb50198c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '965452dfe3726e3ef88811985537c57c') in 0.030764 seconds 
+  Import took 0.065566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.733992 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion
+  artifactKey: Guid(123afb3afd0142c44be66f50ce3a9a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion using Guid(123afb3afd0142c44be66f50ce3a9a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f6aaa73aea2391efc2a4b157c8a5c4') in 0.032789 seconds 
+  Import took 0.053320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 150.068496 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/Ch49_nonPBR.fbx
+  artifactKey: Guid(903bd754a9c1e964da05c18b936b3d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/Ch49_nonPBR.fbx using Guid(903bd754a9c1e964da05c18b936b3d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '729691ce4a47a69ba2929958c4dad140') in 0.259840 seconds 
+  Import took 0.268033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe (2).fbx
+  artifactKey: Guid(49509552009d83542a614a35900ecbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe (2).fbx using Guid(49509552009d83542a614a35900ecbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eddff68c46ca4134b3fbe4d9a0ef4cc7') in 0.030958 seconds 
+  Import took 0.040883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000409 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/run backwards.fbx
+  artifactKey: Guid(7aaba8dead8191e47b661108127250f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/run backwards.fbx using Guid(7aaba8dead8191e47b661108127250f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df3d14d3c0a2efdfe8d4735183c459b') in 0.025822 seconds 
+  Import took 0.032832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/hit reaction.fbx
+  artifactKey: Guid(470312fbc9512b04cae5fc3e40305b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/hit reaction.fbx using Guid(470312fbc9512b04cae5fc3e40305b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '643dd2b364b0f4ab45def613232650bf') in 0.020031 seconds 
+  Import took 0.026413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/reloading.fbx
+  artifactKey: Guid(eba39a9281cee0643953fffee12b6ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/reloading.fbx using Guid(eba39a9281cee0643953fffee12b6ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63f982ee42ec410ba7af8726d25cf629') in 0.027919 seconds 
+  Import took 0.035588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe.fbx
+  artifactKey: Guid(3be3b2c324f51ed4e90a53be2d946c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe.fbx using Guid(3be3b2c324f51ed4e90a53be2d946c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abfa345a84a599dcd0481d97f05900ac') in 0.032509 seconds 
+  Import took 0.043402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/toss grenade.fbx
+  artifactKey: Guid(ffbc66a099007a945ba38f0c573b8aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/toss grenade.fbx using Guid(ffbc66a099007a945ba38f0c573b8aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1058ad86c06626233a733d4644c9fb93') in 0.027640 seconds 
+  Import took 0.035855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/rifle aiming idle.fbx
+  artifactKey: Guid(abbb25ddf89314b47936f4851fbbb072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/rifle aiming idle.fbx using Guid(abbb25ddf89314b47936f4851fbbb072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abc34aaceb6b41bd7fe768b6bce2585e') in 0.028673 seconds 
+  Import took 0.035167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/turning right 45 degrees.fbx
+  artifactKey: Guid(6e2e95f2933502c41b3b04c96f3e1d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/turning right 45 degrees.fbx using Guid(6e2e95f2933502c41b3b04c96f3e1d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36afc508c760ea9e6ea51456a7e7ffd') in 0.028522 seconds 
+  Import took 0.035833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/rifle run.fbx
+  artifactKey: Guid(7ceee068881b32940aca5c05eebca78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/rifle run.fbx using Guid(7ceee068881b32940aca5c05eebca78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4812a368de2611c847f525c0d1abadb') in 0.027785 seconds 
+  Import took 0.034464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/firing rifle.fbx
+  artifactKey: Guid(7688c702f3d273243a56d830185b3448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/firing rifle.fbx using Guid(7688c702f3d273243a56d830185b3448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '696a986b84ebbd5785786f35d7efacfa') in 0.028590 seconds 
+  Import took 0.034946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe left.fbx
+  artifactKey: Guid(fc43f59fd9b95824e9bc760132ac47e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe left.fbx using Guid(fc43f59fd9b95824e9bc760132ac47e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c591c1d85f0311c5323ea6e5fe3ba1b') in 0.024792 seconds 
+  Import took 0.033929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000726 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe right.fbx
+  artifactKey: Guid(be5a9fa4f3eb2a74d9ef328fe9188763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe right.fbx using Guid(be5a9fa4f3eb2a74d9ef328fe9188763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc53af99406a3d4d051418f814d4b3a') in 0.027104 seconds 
+  Import took 0.038194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/rifle jump.fbx
+  artifactKey: Guid(793bd9d8a798a8341bbe8f11d5144be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/rifle jump.fbx using Guid(793bd9d8a798a8341bbe8f11d5144be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ceee8045d09554ce044d3063a91ae0') in 0.017027 seconds 
+  Import took 0.022609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/turn left.fbx
+  artifactKey: Guid(df4d390a20912a54a82408af7c613dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/turn left.fbx using Guid(df4d390a20912a54a82408af7c613dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fafa7529c3b70195e02a326e1b58765') in 0.017151 seconds 
+  Import took 0.022322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/walking backwards.fbx
+  artifactKey: Guid(967500a325535fa43a503debad5e0222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/walking backwards.fbx using Guid(967500a325535fa43a503debad5e0222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96dbf7359b6e3a7f93af273f6c08febb') in 0.016388 seconds 
+  Import took 0.021943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/walking.fbx
+  artifactKey: Guid(293f26aa4ab06844388aa45b6981dce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/walking.fbx using Guid(293f26aa4ab06844388aa45b6981dce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d34a9a74ee32289b725381bdea6482') in 0.012938 seconds 
+  Import took 0.018361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.114825 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/Ch49_nonPBR.fbx
+  artifactKey: Guid(903bd754a9c1e964da05c18b936b3d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/Ch49_nonPBR.fbx using Guid(903bd754a9c1e964da05c18b936b3d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee374d280fbb03ce2947906d4b1c59a6') in 0.127294 seconds 
+  Import took 0.133511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.938686 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/firing rifle.fbx
+  artifactKey: Guid(7688c702f3d273243a56d830185b3448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/firing rifle.fbx using Guid(7688c702f3d273243a56d830185b3448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75c6211d5a37368bea08b48569b22d3e') in 0.016511 seconds 
+  Import took 0.023148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe (2).fbx
+  artifactKey: Guid(49509552009d83542a614a35900ecbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe (2).fbx using Guid(49509552009d83542a614a35900ecbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f552f780ecfaad1829f8d3db1d4ea467') in 0.016204 seconds 
+  Import took 0.022469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/run backwards.fbx
+  artifactKey: Guid(7aaba8dead8191e47b661108127250f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/run backwards.fbx using Guid(7aaba8dead8191e47b661108127250f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27ae6e1e84e92fb92b0f652446e60f03') in 0.016684 seconds 
+  Import took 0.022949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/hit reaction.fbx
+  artifactKey: Guid(470312fbc9512b04cae5fc3e40305b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/hit reaction.fbx using Guid(470312fbc9512b04cae5fc3e40305b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd107e87a02f57ad63bd38f92ff55ae7') in 0.016259 seconds 
+  Import took 0.023484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/reloading.fbx
+  artifactKey: Guid(eba39a9281cee0643953fffee12b6ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/reloading.fbx using Guid(eba39a9281cee0643953fffee12b6ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12c5dfbc12135a5f372f3c26dc479572') in 0.023396 seconds 
+  Import took 0.032285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe.fbx
+  artifactKey: Guid(3be3b2c324f51ed4e90a53be2d946c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe.fbx using Guid(3be3b2c324f51ed4e90a53be2d946c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a9c9b5d41c6aee68b069d21fc8015a') in 0.017557 seconds 
+  Import took 0.027634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/toss grenade.fbx
+  artifactKey: Guid(ffbc66a099007a945ba38f0c573b8aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/toss grenade.fbx using Guid(ffbc66a099007a945ba38f0c573b8aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a720056ea7d535b1217625b8084ff8') in 0.023404 seconds 
+  Import took 0.031858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/rifle aiming idle.fbx
+  artifactKey: Guid(abbb25ddf89314b47936f4851fbbb072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/rifle aiming idle.fbx using Guid(abbb25ddf89314b47936f4851fbbb072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f084653eade02b99db2ff3221ef94f96') in 0.028524 seconds 
+  Import took 0.037956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/turning right 45 degrees.fbx
+  artifactKey: Guid(6e2e95f2933502c41b3b04c96f3e1d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/turning right 45 degrees.fbx using Guid(6e2e95f2933502c41b3b04c96f3e1d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c571de373040ebcf6f45f3ee8b96c5f4') in 0.022186 seconds 
+  Import took 0.028993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/rifle run.fbx
+  artifactKey: Guid(7ceee068881b32940aca5c05eebca78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/rifle run.fbx using Guid(7ceee068881b32940aca5c05eebca78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c51e629d232b3fdceb6e74038c717edd') in 0.022707 seconds 
+  Import took 0.030180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000406 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/turn left.fbx
+  artifactKey: Guid(df4d390a20912a54a82408af7c613dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/turn left.fbx using Guid(df4d390a20912a54a82408af7c613dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f69ca2e1f1cdf8d3911d2c5c058d7d') in 0.019036 seconds 
+  Import took 0.025833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe left.fbx
+  artifactKey: Guid(fc43f59fd9b95824e9bc760132ac47e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe left.fbx using Guid(fc43f59fd9b95824e9bc760132ac47e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce33f3c678b63d989f1f3707c6832db5') in 0.020941 seconds 
+  Import took 0.028362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe right.fbx
+  artifactKey: Guid(be5a9fa4f3eb2a74d9ef328fe9188763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe right.fbx using Guid(be5a9fa4f3eb2a74d9ef328fe9188763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab548de1534127e38181bfb4f6e5998') in 0.023951 seconds 
+  Import took 0.030802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/rifle jump.fbx
+  artifactKey: Guid(793bd9d8a798a8341bbe8f11d5144be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/rifle jump.fbx using Guid(793bd9d8a798a8341bbe8f11d5144be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '736af8ac39ea803b07c38bca5d502d2e') in 0.021541 seconds 
+  Import took 0.029781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/walking backwards.fbx
+  artifactKey: Guid(967500a325535fa43a503debad5e0222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/walking backwards.fbx using Guid(967500a325535fa43a503debad5e0222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afcd0ea438c8248f31469f29de8a6206') in 0.019617 seconds 
+  Import took 0.028307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000465 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/walking.fbx
+  artifactKey: Guid(293f26aa4ab06844388aa45b6981dce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/walking.fbx using Guid(293f26aa4ab06844388aa45b6981dce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9d53c965541548a10918b5601ca7fb4') in 0.021293 seconds 
+  Import took 0.029540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 182.845829 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/walking.fbx
+  artifactKey: Guid(293f26aa4ab06844388aa45b6981dce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/walking.fbx using Guid(293f26aa4ab06844388aa45b6981dce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28c257510e0babb933b138abacdf8659') in 0.022848 seconds 
+  Import took 0.033877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.871391 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/rifle run.fbx
+  artifactKey: Guid(7ceee068881b32940aca5c05eebca78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/rifle run.fbx using Guid(7ceee068881b32940aca5c05eebca78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eabb55f8c7bc3c1491cc210f46dd8244') in 0.021350 seconds 
+  Import took 0.028695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.388438 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/run backwards.fbx
+  artifactKey: Guid(7aaba8dead8191e47b661108127250f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/run backwards.fbx using Guid(7aaba8dead8191e47b661108127250f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb3da8be9396a9f4ba3090aaeb93c3e') in 0.019564 seconds 
+  Import took 0.027434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.203483 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/walking backwards.fbx
+  artifactKey: Guid(967500a325535fa43a503debad5e0222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/walking backwards.fbx using Guid(967500a325535fa43a503debad5e0222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fead9987b56fa7bf07816bea026271a8') in 0.017804 seconds 
+  Import took 0.025125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.821715 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/turn left.fbx
+  artifactKey: Guid(df4d390a20912a54a82408af7c613dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/turn left.fbx using Guid(df4d390a20912a54a82408af7c613dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc7eff13c8c97cda33d915ffc921794d') in 0.019697 seconds 
+  Import took 0.026533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.303831 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/rifle aiming idle.fbx
+  artifactKey: Guid(abbb25ddf89314b47936f4851fbbb072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/rifle aiming idle.fbx using Guid(abbb25ddf89314b47936f4851fbbb072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d14a351718cb1a49629430a5872abd1') in 0.032126 seconds 
+  Import took 0.051875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.820609 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/firing rifle.fbx
+  artifactKey: Guid(7688c702f3d273243a56d830185b3448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/firing rifle.fbx using Guid(7688c702f3d273243a56d830185b3448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f79bfbf01d1b70a50e686399735d9e4') in 0.021213 seconds 
+  Import took 0.028978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.388187 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe.fbx
+  artifactKey: Guid(3be3b2c324f51ed4e90a53be2d946c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe.fbx using Guid(3be3b2c324f51ed4e90a53be2d946c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb16e96c0a175f36751c146406be1d8c') in 0.018531 seconds 
+  Import took 0.027578 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.091751 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe right.fbx
+  artifactKey: Guid(be5a9fa4f3eb2a74d9ef328fe9188763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe right.fbx using Guid(be5a9fa4f3eb2a74d9ef328fe9188763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b34477c39744d90fc0bcb35b8a97dbcd') in 0.020269 seconds 
+  Import took 0.027659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.136746 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe right.fbx
+  artifactKey: Guid(be5a9fa4f3eb2a74d9ef328fe9188763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe right.fbx using Guid(be5a9fa4f3eb2a74d9ef328fe9188763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5978353fb154947478081f800943e8f9') in 0.018870 seconds 
+  Import took 0.026764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 86.686849 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe right.fbx
+  artifactKey: Guid(be5a9fa4f3eb2a74d9ef328fe9188763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe right.fbx using Guid(be5a9fa4f3eb2a74d9ef328fe9188763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2fc392a142247f2cc5857d5665ba2ff') in 0.020070 seconds 
+  Import took 0.028629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.085034 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe.fbx
+  artifactKey: Guid(3be3b2c324f51ed4e90a53be2d946c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe.fbx using Guid(3be3b2c324f51ed4e90a53be2d946c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e0021b077e566e386693f1fe4cf670c') in 0.021510 seconds 
+  Import took 0.030080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.147320 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe (2).fbx
+  artifactKey: Guid(49509552009d83542a614a35900ecbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe (2).fbx using Guid(49509552009d83542a614a35900ecbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21aade162904bf59e8f6034e41869b1e') in 0.018787 seconds 
+  Import took 0.026040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.692233 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe left.fbx
+  artifactKey: Guid(fc43f59fd9b95824e9bc760132ac47e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe left.fbx using Guid(fc43f59fd9b95824e9bc760132ac47e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55735432828597c534d01f0f324e99a6') in 0.014499 seconds 
+  Import took 0.021786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.361618 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe left.fbx
+  artifactKey: Guid(fc43f59fd9b95824e9bc760132ac47e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe left.fbx using Guid(fc43f59fd9b95824e9bc760132ac47e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98febb8de2528b5bf43c8af0e66cc66a') in 0.017253 seconds 
+  Import took 0.024245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.067413 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe (2).fbx
+  artifactKey: Guid(49509552009d83542a614a35900ecbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe (2).fbx using Guid(49509552009d83542a614a35900ecbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd73ad5e1f27e117297c8ef24a1d55ffd') in 0.018489 seconds 
+  Import took 0.026380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 238.201398 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/run backwards.fbx
+  artifactKey: Guid(7aaba8dead8191e47b661108127250f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/run backwards.fbx using Guid(7aaba8dead8191e47b661108127250f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e024befc255394b3834bec605943483') in 0.018800 seconds 
+  Import took 0.028278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 455.065226 seconds.
+  path: Assets/Scripts/AnimationTest.cs
+  artifactKey: Guid(8682a02d8cc7d5d4da5406ae7a1378ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AnimationTest.cs using Guid(8682a02d8cc7d5d4da5406ae7a1378ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d15b7ae1e90fc568fe5c01904088202') in 0.027884 seconds 
+  Import took 0.037144 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003789 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.514 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1515ms)
+		BeginReloadAssembly (215ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (73ms)
+		EndReloadAssembly (1178ms)
+			LoadAssemblies (152ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (285ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (533ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (122ms)
+				ProcessInitializeOnLoadAttributes (383ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 214.6 MB.
+System memory in use after: 214.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3304.
+Total: 3.589700 ms (FindLiveObjects: 0.247400 ms CreateObjectMapping: 0.130200 ms MarkObjects: 3.191000 ms  DeleteObjects: 0.020200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003240 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.711 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1711ms)
+		BeginReloadAssembly (412ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (259ms)
+		EndReloadAssembly (1197ms)
+			LoadAssemblies (151ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (292ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (538ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (402ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 214.5 MB.
+System memory in use after: 214.7 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3306.
+Total: 4.113100 ms (FindLiveObjects: 0.359900 ms CreateObjectMapping: 0.292700 ms MarkObjects: 3.440600 ms  DeleteObjects: 0.018600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003561 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.399 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1400ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1177ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (287ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (85ms)
+			SetupLoadedEditorAssemblies (517ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (377ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 214.5 MB.
+System memory in use after: 214.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3308.
+Total: 3.671200 ms (FindLiveObjects: 0.294500 ms CreateObjectMapping: 0.145000 ms MarkObjects: 3.211900 ms  DeleteObjects: 0.018800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 529.455278 seconds.
+  path: Assets/Models/Player/Animation/Locomotion/left strafe walking.fbx
+  artifactKey: Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion/left strafe walking.fbx using Guid(1124806a8f4b7624b90d6ee1f5daa946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '252804ad3c33e3701122bc595bf3d2f9') in 0.079121 seconds 
+  Import took 0.085614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Models/Player/Animation/Locomotion/left strafe.fbx
+  artifactKey: Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion/left strafe.fbx using Guid(40933b0d63b1c3542ac59020162d862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40f47c0f4129765f3857201132ef4362') in 0.018186 seconds 
+  Import took 0.024295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.907065 seconds.
+  path: Assets/Models/Player/Animation/Locomotion/right strafe walking.fbx
+  artifactKey: Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion/right strafe walking.fbx using Guid(ddb7f77aa7c6d244488074a3ec00f3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bba50578f666327b7d4b04961dfd8a8') in 0.017902 seconds 
+  Import took 0.025811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.715789 seconds.
+  path: Assets/Models/Player/Animation/Locomotion/right strafe.fbx
+  artifactKey: Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion/right strafe.fbx using Guid(1e6e0f95bd625dd41967e5d368186603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d6b87154eb0a3cfcb2979e751688551') in 0.017033 seconds 
+  Import took 0.023475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.009810 seconds.
+  path: Assets/Models/Player/Animation/Locomotion/right turn 90.fbx
+  artifactKey: Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion/right turn 90.fbx using Guid(a3a44642bee8b4a4988b1a94d370fdae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb4de9c3d3aba39c4cc4a18149f8edcf') in 0.017904 seconds 
+  Import took 0.025921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.389504 seconds.
+  path: Assets/Models/Player/Animation/Locomotion/right turn.fbx
+  artifactKey: Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion/right turn.fbx using Guid(3a270e344cbf879438c23bf3885248c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '719935394da62599d61342ddcdbad4b7') in 0.021678 seconds 
+  Import took 0.032710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.609314 seconds.
+  path: Assets/Models/Player/Animation/Locomotion/running.fbx
+  artifactKey: Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion/running.fbx using Guid(50ce439a425ea5c4692d40063a211f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '042f89ea302d6d15cfc58063d5da5dec') in 0.016799 seconds 
+  Import took 0.023335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.976126 seconds.
+  path: Assets/Models/Player/Animation/Locomotion/walking.fbx
+  artifactKey: Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion/walking.fbx using Guid(bc8b852f6414042418bd319ef754ab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac3e10626e341121ee0a5354cc25661') in 0.016164 seconds 
+  Import took 0.023563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.593313 seconds.
+  path: Assets/Models/Player/Animation/Locomotion/idle.fbx
+  artifactKey: Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/Locomotion/idle.fbx using Guid(bd7e349ac27f9fe4d8b3e27207a2bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e455e9b33dc45f8add08a34b5cf384a') in 0.021610 seconds 
+  Import took 0.028804 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003822 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.566 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1567ms)
+		BeginReloadAssembly (155ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1336ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (298ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (656ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (513ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 214.6 MB.
+System memory in use after: 214.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3310.
+Total: 6.775500 ms (FindLiveObjects: 0.585300 ms CreateObjectMapping: 0.397300 ms MarkObjects: 5.765600 ms  DeleteObjects: 0.025000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 93.637015 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/firing rifle.fbx
+  artifactKey: Guid(7688c702f3d273243a56d830185b3448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/firing rifle.fbx using Guid(7688c702f3d273243a56d830185b3448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e80298a32caba4319595c674801217e') in 0.069171 seconds 
+  Import took 0.080120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/rifle aiming idle.fbx
+  artifactKey: Guid(abbb25ddf89314b47936f4851fbbb072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/rifle aiming idle.fbx using Guid(abbb25ddf89314b47936f4851fbbb072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb736351ee3fd59fddd3e49d6d63fb39') in 0.047515 seconds 
+  Import took 0.056428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.783090 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe (2).fbx
+  artifactKey: Guid(49509552009d83542a614a35900ecbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe (2).fbx using Guid(49509552009d83542a614a35900ecbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a8091c00692c4b556b8019f8e0ad24') in 0.016507 seconds 
+  Import took 0.023776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.684763 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/run backwards.fbx
+  artifactKey: Guid(7aaba8dead8191e47b661108127250f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/run backwards.fbx using Guid(7aaba8dead8191e47b661108127250f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '020908d0a33832dd868f4553c4c476bc') in 0.016264 seconds 
+  Import took 0.023637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.163740 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/rifle run.fbx
+  artifactKey: Guid(7ceee068881b32940aca5c05eebca78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/rifle run.fbx using Guid(7ceee068881b32940aca5c05eebca78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36245ed19aab32979880b6b59bfbf399') in 0.017721 seconds 
+  Import took 0.025824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.183677 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe left.fbx
+  artifactKey: Guid(fc43f59fd9b95824e9bc760132ac47e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe left.fbx using Guid(fc43f59fd9b95824e9bc760132ac47e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55dcf49983f533f0b6e0a9be7f2d04dc') in 0.016159 seconds 
+  Import took 0.023263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.630721 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe right.fbx
+  artifactKey: Guid(be5a9fa4f3eb2a74d9ef328fe9188763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe right.fbx using Guid(be5a9fa4f3eb2a74d9ef328fe9188763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa8ee642aa984b172f2694df24c81d0') in 0.018254 seconds 
+  Import took 0.024989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.966963 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe.fbx
+  artifactKey: Guid(3be3b2c324f51ed4e90a53be2d946c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe.fbx using Guid(3be3b2c324f51ed4e90a53be2d946c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00f1e57d7c9960ed8e847f90c498f777') in 0.015672 seconds 
+  Import took 0.022458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.188391 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/toss grenade.fbx
+  artifactKey: Guid(ffbc66a099007a945ba38f0c573b8aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/toss grenade.fbx using Guid(ffbc66a099007a945ba38f0c573b8aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '040190fe9547a1d704ef1676024882eb') in 0.029382 seconds 
+  Import took 0.039150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.446191 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/walking backwards.fbx
+  artifactKey: Guid(967500a325535fa43a503debad5e0222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/walking backwards.fbx using Guid(967500a325535fa43a503debad5e0222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8f009d53e47e45a702dc220a32f24c5') in 0.016387 seconds 
+  Import took 0.023172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.205766 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/walking.fbx
+  artifactKey: Guid(293f26aa4ab06844388aa45b6981dce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/walking.fbx using Guid(293f26aa4ab06844388aa45b6981dce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98a0794268964b0f1c27a5729eb73a33') in 0.018957 seconds 
+  Import took 0.026665 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003428 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.047 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2048ms)
+		BeginReloadAssembly (204ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1722ms)
+			LoadAssemblies (183ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (432ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (85ms)
+			SetupLoadedEditorAssemblies (780ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (169ms)
+				ProcessInitializeOnLoadAttributes (574ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (34ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 214.7 MB.
+System memory in use after: 214.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3312.
+Total: 4.085900 ms (FindLiveObjects: 0.257000 ms CreateObjectMapping: 0.135000 ms MarkObjects: 3.673800 ms  DeleteObjects: 0.018700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 111.877842 seconds.
+  path: Assets/Models/Player/Animation/RifleLocomotion/strafe.fbx
+  artifactKey: Guid(3be3b2c324f51ed4e90a53be2d946c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Player/Animation/RifleLocomotion/strafe.fbx using Guid(3be3b2c324f51ed4e90a53be2d946c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07ed7aa4e65d4e4f74c6e9e8ea197abb') in 0.082989 seconds 
+  Import took 0.090479 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003927 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.923 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1924ms)
+		BeginReloadAssembly (176ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1644ms)
+			LoadAssemblies (140ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (375ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (817ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (661ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (30ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 214.7 MB.
+System memory in use after: 214.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3314.
+Total: 3.642000 ms (FindLiveObjects: 0.313000 ms CreateObjectMapping: 0.145500 ms MarkObjects: 3.163100 ms  DeleteObjects: 0.019400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003242 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.603 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2603ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (2362ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (751ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (116ms)
+			SetupLoadedEditorAssemblies (829ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (268ms)
+				ProcessInitializeOnLoadAttributes (508ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 214.7 MB.
+System memory in use after: 214.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3316.
+Total: 12.866600 ms (FindLiveObjects: 0.364400 ms CreateObjectMapping: 6.221800 ms MarkObjects: 6.227300 ms  DeleteObjects: 0.049600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
