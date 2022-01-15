@@ -12,6 +12,7 @@ namespace Multiplayer.Samples
             public Vector3 Position;
             public Quaternion Rotation;
             public float Time;
+            public float DeliveryTime;
         }
 
         public GameObject Server;
@@ -172,6 +173,5 @@ namespace Multiplayer.Samples
                 });
             }
         }
-
-
     }
+}
