@@ -38,6 +38,9 @@ namespace Multiplayer
         public static float FramesPerSecond = NetworkManager.Singleton.tickrate.GetIntValue();
         public static float FixedDelta = Utils.TickInterval();
 
+        public bool IsFirstTime = true;
+        public bool IsLastTime = false;
+
         private double accumulator;
         private long lastTime;
 
@@ -56,6 +59,8 @@ namespace Multiplayer
         {
             lastTime = 0;
             accumulator = 0.0;
+            IsFirstTime = true;
+            IsLastTime = false;
             stopwatch.Restart();
         }
 
@@ -71,10 +76,17 @@ namespace Multiplayer
             accumulator += (double)(elapsedTicks - lastTime) / Stopwatch.Frequency;
             lastTime = elapsedTicks;
 
+            IsFirstTime = true;
+            IsLastTime = false;
+
             while (accumulator >= FixedDelta)
             {
+                if (accumulator - FixedDelta < FixedDelta)
+                    IsLastTime = true;
+
                 action();
                 accumulator -= FixedDelta;
+                IsFirstTime = false;
             }
         }
     }
@@ -94,41 +106,6 @@ namespace Multiplayer
             // The cases where this can happen are high ping/low fps
             GlobalVariables.clientTick++;
             GlobalVariables.clientTick = Mathf.Clamp(GlobalVariables.clientTick, GlobalVariables.serverTick - 2, GlobalVariables.serverTick);
-        }
-    }
-
-    /// <summary> Stores positions and rotations at given tick - used for interpolation </summary>
-    public class TransformUpdate
-    {
-        public int tick;
-        public float time;
-        public float deliveryTime;
-        public Vector3 position;
-        public Quaternion rotation;
-        public AnimationData animationData;
-
-        internal TransformUpdate()
-        {
-
-        }
-
-        internal TransformUpdate(int tick, float time, float deliveryTime, Vector3 position, Quaternion rotation)
-        {
-            this.tick = tick;
-            this.time = time;
-            this.deliveryTime = deliveryTime;
-            this.position = position;
-            this.rotation = rotation;
-        }
-
-        internal TransformUpdate(int tick, float time, Vector3 position, Quaternion rotation, AnimationData animationData = null)
-        {
-            this.tick = tick;
-            this.time = time;
-            this.deliveryTime = 0;
-            this.position = position;
-            this.rotation = rotation;
-            this.animationData = animationData;
         }
     }
 
@@ -210,16 +187,6 @@ namespace Multiplayer
         }
     }
 
-    /// <summary> Snapshot state sent to all clients - used for remote players interpolation </summary>
-    public struct Snapshot
-    {
-        public int Tick;
-        public float Time; 
-        public float DeliveryTime; // purpose: debugging and simulating network traffic
-        public Vector3 Position;
-        public Quaternion Rotation;
-    }
-
     /// <summary> AnimationData stores values of animation properties that are sent from client </summary>
     public class AnimationData
     {
@@ -237,5 +204,27 @@ namespace Multiplayer
             this.rifleAmount = rifleAmount;
             this.isFiring = isFiring;
         }
+    }
+
+    /// <summary> Stores positions and rotations at given tick - used for interpolation </summary>
+    [System.Serializable] 
+    public struct InterpolationState
+    {
+        public int tick;
+        public float time;
+        public Vector3 position;
+        public Quaternion rotation;
+        public PlayerState playerState;
+    }
+
+    /// <summary> Stores state of the player sent from the server used mainly for animation as a properties</summary>
+    [System.Serializable]
+    public class PlayerState
+    {
+        public float lateralSpeed;
+        public float forwardSpeed;
+        public float jumpLayerWeight;
+        public float rifleAmount;
+        public bool isFiring;
     }
 }

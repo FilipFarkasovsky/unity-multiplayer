@@ -39,10 +39,18 @@ public class HandleMessages : MonoBehaviour
         float _jumpLayerWeight = message.GetFloat();
         bool _isFiring = message.GetBool();
 
+        PlayerState state = new PlayerState
+        {
+            lateralSpeed = _lateralSpeed,
+            forwardSpeed = _forwardSpeed,
+            jumpLayerWeight = _jumpLayerWeight,
+            isFiring = _isFiring,
+            rifleAmount = 1f,
+        };
 
         if (NetworkManager.Singleton.playerList.TryGetValue(id, out Player player))
         {
-            player.MoveTrans(position, rotation, serverTick, time, new AnimationData(_lateralSpeed, _forwardSpeed, _jumpLayerWeight, 1f, _isFiring));
+            player.MoveTrans(position, rotation, serverTick, time, state);
         }
     }
 

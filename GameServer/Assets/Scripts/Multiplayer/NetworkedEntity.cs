@@ -37,7 +37,7 @@ namespace Multiplayer
 
         private void OnSendMessages()
         {
-            SendMessages.EntitySnapshot(this);
+            // SendMessages.EntitySnapshot(this);
         }
 
         /// <summary>  </summary>

@@ -118,7 +118,6 @@ public class NetworkManager : MonoBehaviour
         SendMessages.ServerTick();
         Server.Tick();
     }
-
     private void Update()
     {
         logicTimer.Update();

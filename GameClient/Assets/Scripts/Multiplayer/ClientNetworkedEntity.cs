@@ -13,7 +13,8 @@ namespace Multiplayer
         public NetworkedObjectType networkedObjectType;
 
         public Interpolation interpolation;
-        public Interpolation cameraInterpolation;
+        public Multiplayer.Samples.SnapshotStDev snapshotInterpolation;
+        public Samples.PlayerInterpolation playerInterpolation;
 
         public void OnDestroy()
         {
@@ -26,17 +27,10 @@ namespace Multiplayer
             if (serverTick > GlobalVariables.serverTick)
                 GlobalVariables.serverTick = serverTick;
 
-            if (interpolation == null)
-            // if (true)
-            {
-                transform.position = position;
-                transform.rotation = rotation;
-                return;
-            }
+            if (playerInterpolation.enabled) playerInterpolation.OnClientServerInterpolationStateReceived(new Samples.InterpolationState { position = position, rotation = rotation, tick = serverTick });
+            if(snapshotInterpolation.enabled) snapshotInterpolation.OnReceivedSnapshot(position);
+            if(interpolation.enabled) interpolation.OnInterpolationStateReceived(new InterpolationState { tick = serverTick, time = time, position = position, rotation = rotation, playerState = null });
 
-            interpolation.NewUpdate(serverTick, time, position, rotation, null);
-
-            // if (cameraInterpolation) cameraInterpolation.NewUpdate(serverTick, rotation);
         }
 
         public static void Spawn(byte networkedObjectType, ushort id, Vector3 position)

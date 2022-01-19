@@ -51,8 +51,8 @@ namespace Multiplayer.Samples
 
         void Update()
         {
-            ServerMovement();
-            ServerSnapshot();
+            // ServerMovement();
+            // ServerSnapshot();
 
             ClientUpdateInterpolationTime();
             ClientReceiveDataFromServer();
@@ -172,6 +172,16 @@ namespace Multiplayer.Samples
                     DeliveryTime = Time.time + random
                 });
             }
+        }
+
+        public void  OnReceivedSnapshot(Vector3 position)
+        {
+            _cNetworkSimQueue.Enqueue(new Snapshot
+            {
+                Time = Time.time,
+                Position = position,
+                DeliveryTime = Time.time - 0.00001f
+            });
         }
     }
 }

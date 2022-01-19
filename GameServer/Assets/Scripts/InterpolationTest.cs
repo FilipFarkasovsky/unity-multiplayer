@@ -14,6 +14,11 @@ public class InterpolationTest : Multiplayer.ServerNetworkedEntity
     private void Update()
     {
         transform.rotation = Quaternion.Euler(Vector3.up * Time.time * 50f);
-        transform.position = startPosition + new Vector3(0f, Mathf.Sin(3 * Time.unscaledTime) * 3, 0f);
+        transform.position = startPosition + new Vector3(0f, Mathf.Sin(3 * Time.time) * 3, 0f);
+    }
+
+    private void FixedUpdate()
+    {
+        SendMessages.EntitySnapshot(this);
     }
 }

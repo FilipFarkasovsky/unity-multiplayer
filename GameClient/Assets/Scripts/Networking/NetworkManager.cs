@@ -87,6 +87,7 @@ public class NetworkManager : MonoBehaviour
 
     private void Start()
     {
+        Application.targetFrameRate = 50;
         // Loop called regularly every tick
         logicTimer = new LogicTimer(FixedTime);
         logicTimer.Start();

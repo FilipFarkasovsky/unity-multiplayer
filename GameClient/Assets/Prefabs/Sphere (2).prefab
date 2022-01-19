@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3736416870585204010}
   - component: {fileID: 3736416870585204009}
   - component: {fileID: 1079140595442484024}
+  - component: {fileID: 5564060574199705125}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Untagged
@@ -105,24 +106,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3736416870585204014}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 550459fd92ac5814e9d5086ebf9874f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 5ac2b538ae33c914c8ca225a4138c03d, type: 2}
   mode: 0
   target: 4
   playerAnimation: {fileID: 0}
-  Server: {fileID: 0}
-  serverDelay: 0
   Delay: 0
   WaitForLerp: 0
   PreviousPosition: {x: 0, y: 0, z: 0}
   NewPosition: {x: 0, y: 0, z: 0}
   PreviousTime: 0
   CurrentTime: 0
-  isCube: 1
   TimeLastSnapshotReceived: 0
   TimeSinceLastSnapshotReceived: 0
   DelayTarget: 0
@@ -146,16 +143,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc6aff983e8e53c49989e8c0ae07481d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeLastSnapshotReceived: 0
-  TimeSinceLastSnapshotReceived: 0
-  DelayTarget: 0
-  RealDelayTarget: 0
-  MaxServerTimeReceived: 0
-  ScaledInterpolationTime: 0
-  InterpTimeScale: 1
+  Server: {fileID: 0}
+  Client: {fileID: 3736416870585204014}
+  _cDelayTarget: 0
+  _cRealDelayTarget: 0
+  _cMaxServerTimeReceived: 0
+  _cInterpolationTime: 0
+  _cInterpTimeScale: 1
   SNAPSHOT_OFFSET_COUNT: 2
   INTERP_NEGATIVE_THRESHOLD: 1
   INTERP_POSITIVE_THRESHOLD: 2
+  random: 0
 --- !u!114 &1079140595442484024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,4 +169,27 @@ MonoBehaviour:
   id: 0
   networkedObjectType: 3
   interpolation: {fileID: 3736416870585204010}
-  cameraInterpolation: {fileID: 0}
+  snapshotInterpolation: {fileID: 3736416870585204009}
+  playerInterpolation: {fileID: 5564060574199705125}
+--- !u!114 &5564060574199705125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3736416870585204014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dd7895998992b4084f9341a97ce1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lastReceivedServerSimulationState:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+    tick: 0
+  timeElapsed: 0
+  timeToReachTarget: 0.1
+  teleportDistance: 5
+  SnapshotDifference: 0
+  ServerTick: 0
+  DelayTick: 0

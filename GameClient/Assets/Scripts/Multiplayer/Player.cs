@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     {
         NetworkManager.Singleton.playerList.Remove(id);
     }
-    public void MoveTrans(Vector3 position, Quaternion rotation, int serverTick, float time, AnimationData animationData = null)
+    public void MoveTrans(Vector3 position, Quaternion rotation, int serverTick, float time, PlayerState playerState = null)
     {
         if (serverTick > GlobalVariables.serverTick)
             GlobalVariables.serverTick = serverTick;
@@ -29,7 +29,16 @@ public class Player : MonoBehaviour
             return;
         }
 
-        interpolation.NewUpdate(serverTick, time, position, rotation, animationData);
+        InterpolationState state = new InterpolationState
+        {
+            tick = serverTick,
+            time = time,
+            position = position,
+            rotation = rotation,
+            playerState = playerState,
+
+        };
+        interpolation.OnInterpolationStateReceived(state);
 
         // if (cameraInterpolation) cameraInterpolation.NewUpdate(serverTick, rotation);
     }

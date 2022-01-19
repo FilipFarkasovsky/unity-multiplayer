@@ -6,7 +6,41 @@ namespace Multiplayer.Samples
     /// <summary> Controls interpolation on networked objects</summary>
     public class Interpolation : MonoBehaviour
     {
-        #region properties
+        /// <summary> Stores positions and rotations at given tick - used for interpolation </summary>
+        public class TransformUpdate
+        {
+            public int tick;
+            public float time;
+            public float deliveryTime;
+            public Vector3 position;
+            public Quaternion rotation;
+            public AnimationData animationData;
+
+            internal TransformUpdate()
+            {
+
+            }
+
+            internal TransformUpdate(int tick, float time, float deliveryTime, Vector3 position, Quaternion rotation)
+            {
+                this.tick = tick;
+                this.time = time;
+                this.deliveryTime = deliveryTime;
+                this.position = position;
+                this.rotation = rotation;
+            }
+
+            internal TransformUpdate(int tick, float time, Vector3 position, Quaternion rotation, AnimationData animationData = null)
+            {
+                this.tick = tick;
+                this.time = time;
+                this.deliveryTime = 0;
+                this.position = position;
+                this.rotation = rotation;
+                this.animationData = animationData;
+            }
+        }
+
         [SerializeField] public InterpolationMode mode;
         [SerializeField] public InterpolationTarget target;
         [SerializeField] private PlayerAnimation playerAnimation;
@@ -34,7 +68,6 @@ namespace Multiplayer.Samples
         public float PreviousTime;
         public float CurrentTime;
 
-        #endregion
 
         [Header("Debug properties")]
         [SerializeField] float TimeLastSnapshotReceived;
@@ -45,7 +78,6 @@ namespace Multiplayer.Samples
 
         [SerializeField] float MaxServerTimeReceived;
         [SerializeField] float ScaledInterpolationTime;
-        private float NormalInterpolationTime;
 
         [Header("Interpolation properties")]
         [SerializeField] float InterpTimeScale = 1;
@@ -282,7 +314,6 @@ namespace Multiplayer.Samples
         private void RemotePlayerDeltaSnapshot()
         {
             ScaledInterpolationTime += (Time.unscaledDeltaTime * InterpTimeScale);
-            NormalInterpolationTime += (Time.unscaledDeltaTime);
             TimeSinceLastSnapshotReceived += Time.unscaledDeltaTime;
 
             RealDelayTarget = (MaxServerTimeReceived + TimeSinceLastSnapshotReceived - ScaledInterpolationTime) - DelayTarget;
@@ -367,13 +398,10 @@ namespace Multiplayer.Samples
 
         // Updates are used to add a new tick to the list
         // the list is sorted and then set the last tick info to the respective variables
-        #region Updates
-        private int lastPes = 3;
         internal void NewUpdate(int tick, float time, Vector3 position, Quaternion rotation, AnimationData animationData)
         {
             if (!weHadReceivedInterpolationTime)
             {
-                ScaledInterpolationTime = NormalInterpolationTime = time - (SNAPSHOT_INTERVAL * SNAPSHOT_OFFSET_COUNT);
                 weHadReceivedInterpolationTime = true;
             }
 
@@ -416,7 +444,6 @@ namespace Multiplayer.Samples
             AccountForPacketLoss();
 
         }
-        #endregion
 
         // NotAGoodUsername implementation
         // Adds fake packets between real ones and remove very old updates

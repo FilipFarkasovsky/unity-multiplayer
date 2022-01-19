@@ -40,8 +40,11 @@ namespace Multiplayer
         private ClientInputState inputState;            // The client's current ClientInputState.
 
         private ConsoleUI consoleUI;
-        private LogicTimer logicTimer;
 
+        private LogicTimer logicTimer;
+        [SerializeField] private Transform target;
+        private Vector3 from;
+        private Vector3 to;
         private void Awake()
         {
             lastCorrectedFrame = 0;
@@ -98,10 +101,11 @@ namespace Multiplayer
             buttons = 0;
 
             // Add position to interpolate
-            if (playerManager.interpolation.target == Interpolation.InterpolationTarget.localPlayer) playerManager.interpolation.PlayerUpdate(simulationFrame, playerMovement.transform.position);
-            playerManager.interpolation.PreviousPosition = playerManager.interpolation.NewPosition;
-            playerManager.interpolation.NewPosition = playerMovement.transform.position;
-            playerManager.interpolation.CurrentTime = Time.time;
+            //playerManager.interpolation.OnInterpolationStateReceived(new InterpolationState{ tick = simulationFrame, position = playerMovement.transform.position, playerState = null });
+            // if (playerManager.interpolation.target == Interpolation.InterpolationTarget.localPlayer) playerManager.interpolation.OnInterpolationStateReceived(simulationFrame, playerMovement.transform.position, null);
+            //playerManager.interpolation.PreviousPosition = playerManager.interpolation.NewPosition;
+            //playerManager.interpolation.NewPosition = playerMovement.transform.position;
+            //playerManager.interpolation.CurrentTime = Time.time;
         }
 
         private void Update()
@@ -143,6 +147,8 @@ namespace Multiplayer
                 VerticalAxis = Input.GetAxisRaw("Vertical"),
                 rotation = playerCamera.transform.rotation,
             };
+
+            // target.position = Vector3.LerpUnclamped(from, to, logicTimer.LerpAlpha);
 
             logicTimer.Update();
         }
